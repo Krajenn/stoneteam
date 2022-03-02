@@ -1,6 +1,7 @@
 # stoneteam
 
 //linki do inspiracji 
+
 http://www.pasjakamienia.pl/
 
 http://kamieniarstwo-kolbusz.pl/index
