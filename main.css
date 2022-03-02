@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  font-size: 17px;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100px;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  z-index: 10;
+  padding: 0 15%;
+  transition: 0.7s;
+}
+
+header.sticky {
+  height: 85px;
+  transition: 0.7s;
+}
+
+.logo {
+  font-size: 47px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 315px;
+  width: 30%;
+}
+
+.logo a {
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  padding-right: 50px;
+}
+
+#sitelogo {
+  height: 100%;
+  display: block;
+}
+
+.topnav {
+  width: 70%;
+  display: flex;
+}
+
+.topnav ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.topnav ul > li {
+  list-style: none;
+}
+
+.topnav ul > li > a {
+  display: block;
+  padding: 18px;
+  font-size: 18px;
+}
+
+.topnav ul > li > i {
+  display: block;
+  padding: 0;
+}
+
+.topnav ul > li > a:link {
+  text-decoration: none;
+  color: rgb(42, 42, 42);
+}
+
+.topnav ul > li > a:visited {
+  text-decoration: none;
+  color: rgb(42, 42, 42);
+}
+
+.topnav ul > li > a:hover {
+  text-decoration: underline;
+  color: #585858;
+}
+
+.topnav ul > li > a:active {
+  text-decoration: underline;
+}
+
+/* fb */
+
+.topnav ul > li > i:link {
+  text-decoration: none;
+}
+
+.topnav ul > li > i:visited {
+  text-decoration: none;
+  color: rgb(42, 42, 42);
+}
+
+.topnav ul > li > i:hover {
+  text-decoration: underline;
+  color: #585858;
+  cursor: pointer;
+}
+
+.topnav ul > li > i:active {
+  text-decoration: underline;
+}
+
+.toggle-button {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 32px;
+  right: 10px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(42, 42, 42);
+  border-radius: 10px;
+}
+
+main {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+main > section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  width: 100%;
+  height: 100vh;
+}
+main > section > h2 {
+  font-size: 40px;
+  background-color: #eee;
+  opacity: 80%;
+  text-align: center;
+  padding: 8px 24px;
+  border-radius: 16px;
+}
+
+section:nth-child(1) {
+  background-image: url("img/slide.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section:nth-child(2) {
+  height: 47vh;
+  background-color: #d4d4d5;
+}
+
+section:nth-child(3) {
+  height: 47vh;
+  background-image: url("img/slide.jpg");
+  background-size: cover;
+}
+
+footer {
+  height: 30vh;
+  background-color: white;
+  background-size: cover;
+}
+
+@media (max-width: 1500px) {
+  header {
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 1250px) {
+  header {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 1070px) {
+  .logo {
+    justify-content: flex-start;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 1006px) {
+  .logo {
+    justify-content: flex-start;
+    min-width: 236px;
+  }
+  header {
+    padding: 0;
+    height: 85px;
+  }
+
+  .topnav ul > li > a {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 711px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .logo a {
+    padding-right: 0px;
+  }
+
+  header {
+    min-width: 300px;
+  }
+  .topnav {
+    display: none;
+  }
+
+  .topnav.active {
+    display: flex;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .topnav {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 85px;
+    background-color: white;
+  }
+
+  .topnav ul {
+    flex-direction: column;
+    width: 100%;
+    display: block;
+  }
+
+  .topnav ul > li > a {
+    padding: 10px 20px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .topnav ul > li > i {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .topnav ul > li > i:active {
+    text-decoration: underline;
+    display: flex;
+  }
+
+  .topnav ul > li > a:active {
+    text-decoration: underline;
+    display: flex;
+  }
+
+  .topnav ul > li > a:hover {
+    text-decoration: none;
+    background-color: #f0f0f3;
+  }
+
+  .topnav ul > li > i:hover {
+    text-decoration: none;
+    background-color: #f0f0f3;
+    cursor: pointer;
+  }
+}

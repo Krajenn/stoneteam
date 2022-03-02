@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'stoneteam';
+  src: url('../font/stoneteam.eot?6773666');
+  src: url('../font/stoneteam.eot?6773666#iefix') format('embedded-opentype'),
+       url('../font/stoneteam.woff2?6773666') format('woff2'),
+       url('../font/stoneteam.woff?6773666') format('woff'),
+       url('../font/stoneteam.ttf?6773666') format('truetype'),
+       url('../font/stoneteam.svg?6773666#stoneteam') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'stoneteam';
+    src: url('../font/stoneteam.svg?6773666#stoneteam') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "stoneteam";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-facebook:before { content: '\f09a'; font-size: 22px; padding:18px; margin: 0px;} /* '' */
+
+@media (max-width: 1006px){
+.icon-facebook:before { content: '\f09a'; font-size: 19px; padding: 10px;} /* '' */
+}
+
+@media (max-width: 711px){
+  .icon-facebook:before { content: '\f09a'; font-size: 25px;margin-top: 5px; padding: 10px 20px;} /* '' */
+  }
+/* 
+  ## Font Awesome
+
+   Copyright (C) 2016 by Dave Gandy
+
+   Author:    Dave Gandy
+   License:   SIL ()
+   Homepage:  http://fortawesome.github.com/Font-Awesome/
+ */
