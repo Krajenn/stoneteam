@@ -6,7 +6,6 @@
   }
 
   .logo {
-    /* height: 70%; */
     width: 200px;
   }
 
@@ -14,9 +13,8 @@
     position: relative;
     transform: translateX(0);
     top: 0;
-    height: 12vh;
-    overflow: hidden;
-    background-color: transparent;
+    height: 100%;
+    padding-left: 250px;
   }
 
   .topnav ul {
@@ -25,12 +23,12 @@
     flex-wrap: nowrap;
     height: 100%;
     justify-content: space-between;
-    /* transition: .7s; */
   }
 
-  /* header.sticky .topnav ul {
-    height: 10vh;
-  } */
+  header.sticky .topnav {
+    top: 0;
+    height: 100%;
+  }
 
   .topnav ul>li>a {
     font-size: 1rem;
@@ -44,18 +42,12 @@
     padding: 0;
   }
 
-  .topnav ul>li>i:active {
-  }
+  .topnav ul>li>i:active {}
 
-  .topnav ul>li>a:active {
-  }
+  .topnav ul>li>a:active {}
 
-  .topnav ul>li>a:hover {
-    
-  }
+  .topnav ul>li>a:hover {}
 
-  .topnav ul>li>i:hover {
-    
-  }
+  .topnav ul>li>i:hover {}
 
 }
