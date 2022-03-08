@@ -1,9 +1,12 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const topnav = document.getElementsByClassName('topnav')[0]
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.topnav');
 
-toggleButton.addEventListener('click', () => {
-  topnav.classList.toggle('active')
-})
+const handleClick = () => {
+  hamburger.classList.toggle('hamburger--active');
+  nav.classList.toggle('active');
+}
+
+hamburger.addEventListener('click', handleClick);
 
 
 // const parallax = document.getElementById("parallax");

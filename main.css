@@ -1,151 +1,187 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
   background-color: gray;
-  font-size: 17px;
+  font-size: 10px;
 }
 
 header {
   display: flex;
+  justify-content: space-between;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  height: 100px;
+  height: 12vh;
   background-color: white;
   font-family: "Montserrat", sans-serif;
   z-index: 10;
-  padding: 0 15%;
+  padding: 0 5%;
   transition: 0.7s;
 }
 
 header.sticky {
-  height: 85px;
-  transition: 0.7s;
+  height: 10vh;
 }
 
 .logo {
-  font-size: 47px;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 315px;
-  width: 30%;
-}
-
-.logo a {
-  height: 90%;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  margin: 0px;
-  padding-right: 50px;
-}
-
-#sitelogo {
+  background-image: url(img/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 100%;
-  display: block;
+  width: 60%;
 }
+
+/* BURGER */
+
+.hamburger {
+  padding: 10px;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  transition: transform .3s .1s ease-in-out;
+}
+
+.hamburger__box {
+  width: 9vh;
+  height: 9vh;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger__inner {
+  width: 100%;
+  height: .5vh;
+  background-color: #171717;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color .1s ease-in-out;
+}
+
+.hamburger__inner::before,
+.hamburger__inner::after {
+  width: 100%;
+  height: .5vh;
+  background-color: #171717;
+  position: absolute;
+  content: '';
+  left: 0;
+  transition: transform .2s ease-in-out;
+}
+
+.hamburger__inner::before {
+  top: -2vh;
+}
+
+.hamburger__inner::after {
+  top: 2vh;
+}
+
+.hamburger--active .hamburger__inner {
+  background-color: transparent;
+}
+
+.hamburger--active .hamburger__inner:before {
+  transform: translateY(2vh) rotate(-45deg);
+}
+
+.hamburger--active .hamburger__inner:after {
+  transform: translateY(-2vh) rotate(45deg);
+}
+
+/* NAV */
 
 .topnav {
-  width: 70%;
-  display: flex;
+  display: block;
+  position: absolute;
+  top: 12vh;
+  left: 0;
+  height: 50vh;
+  background-color: #FFF;
+  width: 100%;
+  transform: translateX(100vw);
+  transition: transform .3s ease-in-out;
+}
+
+.topnav.active {
+  transform: translateY(0);
+}
+
+header.sticky .topnav {
+  top: 10vh;
 }
 
 .topnav ul {
   width: 100%;
-  padding: 0;
-  margin: 0;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   align-items: center;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.topnav ul > li {
+.topnav ul>li {
   list-style: none;
+  line-height: 10vh;
 }
 
-.topnav ul > li > a {
+.topnav ul>li>a {
   display: block;
-  padding: 18px;
-  font-size: 18px;
+  font-size: 2rem;
 }
 
-.topnav ul > li > i {
-  display: block;
-  padding: 0;
-}
-
-.topnav ul > li > a:link {
+.topnav ul>li>a:link {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
 
-.topnav ul > li > a:visited {
+.topnav ul>li>a:visited {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
 
-.topnav ul > li > a:hover {
+.topnav ul>li>a:hover {
   text-decoration: underline;
   color: #585858;
 }
 
-.topnav ul > li > a:active {
+.topnav ul>li>a:active {
   text-decoration: underline;
 }
 
 /* fb */
 
-.topnav ul > li > i:link {
+.topnav ul>li>i:link {
   text-decoration: none;
 }
 
-.topnav ul > li > i:visited {
+.topnav ul>li>i:visited {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
 
-.topnav ul > li > i:hover {
+.topnav ul>li>i:hover {
   text-decoration: underline;
   color: #585858;
   cursor: pointer;
 }
 
-.topnav ul > li > i:active {
+.topnav ul>li>i:active {
   text-decoration: underline;
 }
 
-.toggle-button {
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  top: 32px;
-  right: 10px;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
+/* MAIN */
 
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: rgb(42, 42, 42);
-  border-radius: 10px;
-}
-
-main {
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
-
-main > section {
+main>section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,7 +189,8 @@ main > section {
   width: 100%;
   height: 100vh;
 }
-main > section > h2 {
+
+main>section>h2 {
   font-size: 40px;
   background-color: #eee;
   opacity: 80%;
@@ -183,113 +220,4 @@ footer {
   height: 30vh;
   background-color: white;
   background-size: cover;
-}
-
-@media (max-width: 1500px) {
-  header {
-    padding: 0 10%;
-  }
-}
-
-@media (max-width: 1250px) {
-  header {
-    padding: 0 5%;
-  }
-}
-
-@media (max-width: 1070px) {
-  .logo {
-    justify-content: flex-start;
-    min-width: 280px;
-  }
-}
-
-@media (max-width: 1006px) {
-  .logo {
-    justify-content: flex-start;
-    min-width: 236px;
-  }
-  header {
-    padding: 0;
-    height: 85px;
-  }
-
-  .topnav ul > li > a {
-    padding: 10px;
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 711px) {
-  .toggle-button {
-    display: flex;
-  }
-
-  .logo a {
-    padding-right: 0px;
-  }
-
-  header {
-    min-width: 300px;
-  }
-  .topnav {
-    display: none;
-  }
-
-  .topnav.active {
-    display: flex;
-  }
-
-  .logo {
-    justify-content: center;
-  }
-
-  .topnav {
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    margin-top: 85px;
-    background-color: white;
-  }
-
-  .topnav ul {
-    flex-direction: column;
-    width: 100%;
-    display: block;
-  }
-
-  .topnav ul > li > a {
-    padding: 10px 20px;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .topnav ul > li > i {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-
-  .topnav ul > li > i:active {
-    text-decoration: underline;
-    display: flex;
-  }
-
-  .topnav ul > li > a:active {
-    text-decoration: underline;
-    display: flex;
-  }
-
-  .topnav ul > li > a:hover {
-    text-decoration: none;
-    background-color: #f0f0f3;
-  }
-
-  .topnav ul > li > i:hover {
-    text-decoration: none;
-    background-color: #f0f0f3;
-    cursor: pointer;
-  }
 }
