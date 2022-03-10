@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+  font-size: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 12vh;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  z-index: 10;
+  padding: 0 5%;
+  transition: 0.7s;
+}
+
+header.sticky {
+  height: 10vh;
+}
+
+.logo {
+  background-image: url(img/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 60%;
+}
+
+/* BURGER */
+
+.hamburger {
+  padding: 10px;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  transition: transform 0.3s 0.1s ease-in-out;
+}
+
+.hamburger__box {
+  width: 9vh;
+  height: 9vh;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger__inner {
+  width: 100%;
+  height: 0.5vh;
+  background-color: #171717;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.1s ease-in-out;
+}
+
+.hamburger__inner::before,
+.hamburger__inner::after {
+  width: 100%;
+  height: 0.5vh;
+  background-color: #171717;
+  position: absolute;
+  content: "";
+  left: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hamburger__inner::before {
+  top: -2vh;
+}
+
+.hamburger__inner::after {
+  top: 2vh;
+}
+
+.hamburger--active .hamburger__inner {
+  background-color: transparent;
+}
+
+.hamburger--active .hamburger__inner:before {
+  transform: translateY(2vh) rotate(-45deg);
+}
+
+.hamburger--active .hamburger__inner:after {
+  transform: translateY(-2vh) rotate(45deg);
+}
+
+/* NAV */
+
+.topnav {
+  display: block;
+  position: absolute;
+  top: 12vh;
+  left: 0;
+  height: 50vh;
+  background-color: #fff;
+  width: 100%;
+  transform: translateX(100vw);
+  transition: transform 0.3s ease-in-out;
+}
+
+.topnav.active {
+  transform: translateY(0);
+}
+
+header.sticky .topnav {
+  top: 10vh;
+}
+
+.topnav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.topnav ul > li {
+  list-style: none;
+  line-height: 10vh;
+}
+
+.topnav ul > li > a {
+  display: block;
+  font-size: 2rem;
+}
+
+.topnav ul > li > a:link {
+  text-decoration: none;
+  color: rgb(42, 42, 42);
+}
+
+.topnav ul > li > a:visited {
+  text-decoration: none;
+  color: rgb(42, 42, 42);
+}
+
+.topnav ul > li > a:hover {
+  text-decoration: underline;
+  color: #585858;
+}
+
+.topnav ul > li > a:active {
+  text-decoration: underline;
+}
+
+/* fb */
+
+.topnav ul > li > i:link {
+  text-decoration: none;
+}
+
+.topnav ul > li > i:visited {
+  text-decoration: none;
+  color: rgb(42, 42, 42);
+}
+
+.topnav ul > li > i:hover {
+  text-decoration: underline;
+  color: #585858;
+  cursor: pointer;
+}
+
+.topnav ul > li > i:active {
+  text-decoration: underline;
+}
+
+/* MAIN */
+
+main > section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  width: 100%;
+  height: 100vh;
+}
+
+main > section > h1 {
+  font-size: 40px;
+  background-color: #eee;
+  opacity: 80%;
+  text-align: center;
+  padding: 8px 24px;
+  border-radius: 16px;
+}
+
+section:nth-child(1) {
+  background-image: url("img/slide.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* CZYM SIE ZAJMUJEMY*/
+
+section:nth-child(2) {
+  height: 47vh;
+  background-color: white;
+}
+
+section:nth-child(2) .about {
+  width: 90vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-child(2) img {
+  height: 85%;
+  display: flex;
+}
+
+section:nth-child(2) .text-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 85%;
+}
+
+section:nth-child(2) .text-panel > h2 {
+  display: flex;
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0px 0px;
+}
+ 
+section:nth-child(2) .text-panel > h3 {
+  display: flex;
+  font-size: 1rem;
+  text-align: justify;
+  margin: 20px 0px 10px;
+}
+
+section:nth-child(2) .link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+section:nth-child(2) .link-button a{
+  font-size: 1.2rem;
+  padding: 15px;
+  justify-content: center;
+  background-color: #585858;
+  display: inline-block;
+  text-align: center;
+}
+
+section:nth-child(2) .link-button a:hover {
+  text-decoration: none;
+}
+
+section:nth-child(2) .link-button a:active {
+  text-decoration: none;
+}
+
+section:nth-child(2) .link-button a:visited {
+  text-decoration: none;
+}
+
+section:nth-child(3) {
+  height: 47vh;
+  background-image: url("img/slide.jpg");
+  background-size: cover;
+}
+
+footer {
+  height: 30vh;
+  background-color: white;
+  background-size: cover;
+}

@@ -1,0 +1,53 @@
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .topnav {
+    position: relative;
+    transform: translateX(0);
+    top: 0;
+    height: 100%;
+    padding-left: 250px;
+  }
+
+  .topnav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  header.sticky .topnav {
+    top: 0;
+    height: 100%;
+  }
+
+  .topnav ul>li>a {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .topnav ul>li>i {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .topnav ul>li>i:active {}
+
+  .topnav ul>li>a:active {}
+
+  .topnav ul>li>a:hover {}
+
+  .topnav ul>li>i:hover {}
+
+}
