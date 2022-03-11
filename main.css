@@ -131,13 +131,37 @@ header.sticky .topnav {
 
 .topnav ul>li {
   list-style: none;
-  line-height: 10vh;
 }
 
 .topnav ul>li>a {
+  position: relative;
   display: block;
   font-size: 2rem;
+  padding: 20px 10px;
+  overflow: hidden;
 }
+
+/* underline */
+
+.topnav ul>li>a::after{
+  display: block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: .2s ease-in-out;
+}
+
+.topnav ul>li>a:hover::after {
+  color: #585858;
+  transform: translateX(0);
+}
+
+/* underlineEnd */
 
 .topnav ul>li>a:link {
   text-decoration: none;
@@ -150,12 +174,11 @@ header.sticky .topnav {
 }
 
 .topnav ul>li>a:hover {
-  text-decoration: underline;
   color: #585858;
 }
 
 .topnav ul>li>a:active {
-  text-decoration: underline;
+  
 }
 
 /* fb */
@@ -170,7 +193,7 @@ header.sticky .topnav {
 }
 
 .topnav ul>li>i:hover {
-  text-decoration: underline;
+  
   color: #585858;
   cursor: pointer;
 }
