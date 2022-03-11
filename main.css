@@ -10,18 +10,25 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   height: 12vh;
   background-color: white;
-  font-family: "Montserrat", sans-serif;
   z-index: 10;
+  box-shadow: 0px 0px 10px 0px rgba(66, 68, 90, 1);
   padding: 0 5%;
   transition: 0.7s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 header.sticky {
@@ -35,6 +42,14 @@ header.sticky {
   background-size: contain;
   height: 100%;
   width: 60%;
+}
+
+.logo__link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  margin: auto 0;
 }
 
 /* BURGER */
@@ -127,6 +142,7 @@ header.sticky .topnav {
   align-items: center;
   text-transform: uppercase;
   font-weight: 700;
+  line-height: 10vh;
 }
 
 .topnav ul>li {
@@ -137,31 +153,8 @@ header.sticky .topnav {
   position: relative;
   display: block;
   font-size: 2rem;
-  padding: 20px 10px;
   overflow: hidden;
 }
-
-/* underline */
-
-.topnav ul>li>a::after{
-  display: block;
-  content: "";
-  height: 2px;
-  width: 100%;
-  background-color: black;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translateX(-100%);
-  transition: .2s ease-in-out;
-}
-
-.topnav ul>li>a:hover::after {
-  color: #585858;
-  transform: translateX(0);
-}
-
-/* underlineEnd */
 
 .topnav ul>li>a:link {
   text-decoration: none;
@@ -177,9 +170,7 @@ header.sticky .topnav {
   color: #585858;
 }
 
-.topnav ul>li>a:active {
-  
-}
+.topnav ul>li>a:active {}
 
 /* fb */
 
@@ -193,7 +184,7 @@ header.sticky .topnav {
 }
 
 .topnav ul>li>i:hover {
-  
+
   color: #585858;
   cursor: pointer;
 }
