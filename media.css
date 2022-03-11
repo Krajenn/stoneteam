@@ -98,4 +98,9 @@
 
   .topnav ul>li>i:hover {}
 
+
+  section:nth-child(2) .about {
+    max-width: 1400px;
+  }
+
 }
