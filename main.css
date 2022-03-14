@@ -48,7 +48,6 @@ header.sticky {
   display: block;
   height: 100%;
   width: 100%;
-  border: 1px solid black;
   margin: auto 0;
 }
 
@@ -125,9 +124,12 @@ header.sticky {
   width: 100%;
   transform: translateX(100vw);
   transition: transform .3s ease-in-out;
+  box-shadow: 0 10px 10px -10px rgba(66, 68, 90, 1);
+  overflow: hidden;
 }
 
 .topnav.active {
+  /* display: block; */
   transform: translateY(0);
 }
 
@@ -152,7 +154,7 @@ header.sticky .topnav {
 .topnav ul>li>a {
   position: relative;
   display: block;
-  font-size: 2rem;
+  font-size: 1rem;
   overflow: hidden;
 }
 
@@ -224,6 +226,7 @@ section:nth-child(1) {
 section:nth-child(2) {
   height: 47vh;
   background-color: white;
+  overflow: hidden;
 }
 
 section:nth-child(2) .about {
@@ -291,7 +294,7 @@ section:nth-child(2) .link-button a:visited {
 }
 
 section:nth-child(3) {
-  height: 45vh;
+  max-height: 35vh;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -301,14 +304,15 @@ section:nth-child(3) {
 .swiper {
   width: 100%;
   height: 100%;
-  /* user-select: none; */
+  user-select: none;
 }
 
 .swiper-slide {
+  height: 90%;
+  width: 95%;
   text-align: center;
   font-size: 18px;
   background: #fff;
-
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,7 +331,8 @@ section:nth-child(3) {
 .swiper-slide a {
   display: inline-block;
   width: 100%;
-  height: 80%;
+  height: 100%;
+  /* cursor: grab; */
 }
 
 .swiper-slide img {
@@ -337,6 +342,13 @@ section:nth-child(3) {
   height: 100%;
   object-fit: contain;
   margin: 0;
+}
+
+.swiper-pagination {
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
