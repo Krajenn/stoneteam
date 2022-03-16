@@ -7,6 +7,7 @@
 body {
   /* background-color: gray; */
   font-size: 10px;
+  background-color: #fff;
 }
 
 header {
@@ -216,9 +217,26 @@ main>section>h2 {
 }
 
 section:nth-child(1) {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+}
+
+.bgFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
   background-image: url("img/slide.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+section:nth-child(1) h1 {
+  position: absolute;
 }
 
 /* CZYM SIE ZAJMUJEMY*/
@@ -294,22 +312,24 @@ section:nth-child(2) .link-button a:visited {
 }
 
 section:nth-child(3) {
-  max-height: 35vh;
-  max-width: 90%;
+  height: 50vh;
+  width: 100%;
   margin: 0 auto;
+  padding: 5vh 0;
+  background-color: #fff;
 }
 
 /* SWIPER */
 
 .swiper {
-  width: 100%;
+  width: 95%;
   height: 100%;
-  user-select: none;
+  /* user-select: none; */
 }
 
 .swiper-slide {
   height: 90%;
-  width: 95%;
+  width: 100%;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -326,13 +346,18 @@ section:nth-child(3) {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+
+  position: relative;
 }
 
 .swiper-slide a {
-  display: inline-block;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  /* cursor: grab; */
+  cursor: grab;
 }
 
 .swiper-slide img {
@@ -345,10 +370,29 @@ section:nth-child(3) {
 }
 
 .swiper-pagination {
-  height: 5%;
+  height: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
+
+/* MAP */
+
+section:nth-child(4) {
+  height: 60vh;
+  width: 100%;
+}
+
+section:nth-child(4) iframe {
+  width: 100%;
+  height: 100%;
 }
 
 footer {
