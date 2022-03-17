@@ -26,7 +26,7 @@
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: .2rem;
   text-align: center;
   /* opacity: .8; */
 
@@ -35,11 +35,11 @@
   text-transform: none;
 
   /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
+  line-height: 1rem;
 
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: .2rem;
 
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -52,15 +52,9 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-facebook:before { content: '\f09a'; font-size: 22px; padding:18px; margin: 0px;} /* '' */
+.icon-facebook:before { content: '\f09a'; font-size: 2rem; padding: 0px; margin: 0px;} /* '' */
 
-@media (max-width: 1006px){
-.icon-facebook:before { content: '\f09a'; font-size: 19px; padding: 10px;} /* '' */
-}
 
-@media (max-width: 711px){
-  .icon-facebook:before { content: '\f09a'; font-size: 25px;margin-top: 5px; padding: 10px 20px;} /* '' */
-  }
 /* 
   ## Font Awesome
 
