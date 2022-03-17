@@ -5,7 +5,6 @@
 }
 
 body {
-  /* background-color: gray; */
   font-size: 10px;
   background-color: #fff;
 }
@@ -41,7 +40,7 @@ header.sticky {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100%;
+  height: 80%;
   width: 60%;
 }
 
@@ -55,7 +54,8 @@ header.sticky {
 /* BURGER */
 
 .hamburger {
-  padding: 10px;
+  padding: 0 10px;
+  height: 100%;
   display: block;
   cursor: pointer;
   background-color: transparent;
@@ -73,19 +73,19 @@ header.sticky {
 
 .hamburger__inner {
   width: 100%;
-  height: .3vh;
+  height: .4vh;
   background-color: #171717;
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  transition: background-color .1s ease-in-out;
+  transition: background-color .1s ease-in-out, transform .7s;
 }
 
 .hamburger__inner::before,
 .hamburger__inner::after {
   width: 100%;
-  height: .3vh;
+  height: .4vh;
   background-color: #171717;
   position: absolute;
   content: '';
@@ -113,6 +113,11 @@ header.sticky {
   transform: translateY(-2vh) rotate(45deg);
 }
 
+/* scale hamburger in logo */
+header.sticky .hamburger__inner {
+  transform: scale(.9);
+}
+
 /* NAV */
 
 .topnav {
@@ -130,7 +135,6 @@ header.sticky {
 }
 
 .topnav.active {
-  /* display: block; */
   transform: translateY(0);
 }
 
@@ -223,7 +227,7 @@ section:nth-child(1) {
 }
 
 .bgFixed {
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -242,9 +246,9 @@ section:nth-child(1) h1 {
 /* CZYM SIE ZAJMUJEMY*/
 
 section:nth-child(2) {
-  height: 80vh;
+  height: 83vh;
   background-color: white;
-  margin-bottom: 3vh;
+  padding-bottom: 3vh;
 }
 
 section:nth-child(2) .about {
@@ -320,10 +324,10 @@ section:nth-child(2)>.about>.text-panel>.link-button>a:active {
 }
 
 section:nth-child(3) {
-  height: 50vh;
+  height: 53vh;
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding-bottom: 3vh;
   background-color: #fff;
 }
 
@@ -373,7 +377,6 @@ ul.swiper-wrapper {
 section:nth-child(4) {
   height: 60vh;
   width: 100%;
-  margin-top: 3vh;
 }
 
 section:nth-child(4) iframe {
