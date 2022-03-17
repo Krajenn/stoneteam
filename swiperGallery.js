@@ -169,8 +169,8 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
             // Buttons/elements
             closeEl: true,
             captionEl: true,
-            fullscreenEl: true,
-            zoomEl: true,
+            fullscreenEl: false,
+            zoomEl: false,
             shareEl: false,
             counterEl: false,
             arrowEl: true,
