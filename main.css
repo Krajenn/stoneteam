@@ -61,7 +61,7 @@ header.sticky {
   background-color: transparent;
   border: 0;
   margin: 0;
-  transition: transform .3s .1s ease-in-out;
+  transition: transform 0.3s 0.1s ease-in-out;
 }
 
 .hamburger__box {
@@ -73,24 +73,24 @@ header.sticky {
 
 .hamburger__inner {
   width: 100%;
-  height: .4vh;
+  height: 0.4vh;
   background-color: #171717;
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  transition: background-color .1s ease-in-out, transform .7s;
+  transition: background-color 0.1s ease-in-out, transform 0.7s;
 }
 
 .hamburger__inner::before,
 .hamburger__inner::after {
   width: 100%;
-  height: .4vh;
+  height: 0.4vh;
   background-color: #171717;
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .hamburger__inner::before {
@@ -115,7 +115,7 @@ header.sticky {
 
 /* scale hamburger in logo */
 header.sticky .hamburger__inner {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 /* NAV */
@@ -126,10 +126,10 @@ header.sticky .hamburger__inner {
   top: 12vh;
   left: 0;
   height: 50vh;
-  background-color: #FFF;
+  background-color: #fff;
   width: 100%;
   transform: translateX(100vw);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   box-shadow: 0 10px 10px -10px rgba(66, 68, 90, 1);
   overflow: hidden;
 }
@@ -152,57 +152,57 @@ header.sticky .topnav {
   line-height: 10vh;
 }
 
-.topnav ul>li {
+.topnav ul > li {
   list-style: none;
 }
 
-.topnav ul>li>a {
+.topnav ul > li > a {
   position: relative;
   display: block;
   font-size: 1rem;
   overflow: hidden;
 }
 
-.topnav ul>li>a:link {
+.topnav ul > li > a:link {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
 
-.topnav ul>li>a:visited {
+.topnav ul > li > a:visited {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
 
-.topnav ul>li>a:hover {
+.topnav ul > li > a:hover {
   color: #585858;
 }
 
-.topnav ul>li>a:active {}
+.topnav ul > li > a:active {
+}
 
 /* fb */
 
-.topnav ul>li>i:link {
+.topnav ul > li > i:link {
   text-decoration: none;
 }
 
-.topnav ul>li>i:visited {
+.topnav ul > li > i:visited {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
 
-.topnav ul>li>i:hover {
-
+.topnav ul > li > i:hover {
   color: #585858;
   cursor: pointer;
 }
 
-.topnav ul>li>i:active {
+.topnav ul > li > i:active {
   text-decoration: underline;
 }
 
 /* MAIN */
 
-main>section {
+main > section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,7 +211,7 @@ main>section {
   height: 100vh;
 }
 
-main>section>h2 {
+main > section > h2 {
   font-size: 40px;
   background-color: #eee;
   opacity: 80%;
@@ -247,12 +247,14 @@ section:nth-child(1) h1 {
 
 section:nth-child(2) {
   height: 83vh;
+  min-height: 550px;
   background-color: white;
   padding-bottom: 3vh;
+  padding-top: 3vh;
 }
 
 section:nth-child(2) .about {
-  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+  padding: 2.5rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -261,7 +263,7 @@ section:nth-child(2) .about {
 
 section:nth-child(2) img {
   width: 100%;
-  max-width: 350px;
+  max-width: 380px;
   padding: 0.75rem 0rem 0.75rem 0rem;
   display: flex;
 }
@@ -273,16 +275,16 @@ section:nth-child(2) .text-panel {
   align-items: center;
 }
 
-section:nth-child(2) .text-panel>h2 {
+section:nth-child(2) .text-panel > h2 {
   display: flex;
   font-size: 1rem;
   text-align: center;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-section:nth-child(2) .text-panel>h3 {
+section:nth-child(2) .text-panel > h3 {
   display: flex;
-  max-width: 350px;
+  max-width: 380px;
   font-size: 0.8rem;
   font-weight: 300;
   text-align: justify;
@@ -308,18 +310,19 @@ section:nth-child(2) .link-button a {
   text-align: center;
 }
 
-section:nth-child(2)>.about>.text-panel>.link-button>a:hover {
+section:nth-child(2) > .about > .text-panel > .link-button > a:hover {
   text-decoration: none;
   background-color: #707070;
   transform: scale(0.95);
   transition: ease-in-out;
 }
 
-section:nth-child(2)>.about>.text-panel>.link-button>a:active {
+section:nth-child(2) > .about > .text-panel > .link-button > a:active {
   text-decoration: none;
+  background-color: #707070;
 }
 
-.section:nth-child(2)>.about>.text-panel>.link-button>a:visited {
+.section:nth-child(2) > .about > .text-panel > .link-button > a:visited {
   text-decoration: none;
 }
 
@@ -363,7 +366,7 @@ ul.swiper-wrapper {
   align-items: center;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
