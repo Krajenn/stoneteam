@@ -389,7 +389,16 @@ section:nth-child(4) iframe {
 }
 
 footer {
-  height: 30vh;
-  background-color: white;
-  background-size: cover;
+  height: 50vh;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+.imgbg {
+  bottom: 0;
+  opacity: 0.8;
+  width: 100%;
+  height: auto;
+  position: absolute;
 }

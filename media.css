@@ -189,10 +189,11 @@
   
   section:nth-child(2) {
     height: 53vh;
+    min-height: 400px;
   }
+  
   section:nth-child(2) .about {
     max-width: 1400px;
-    min-height: 600px;
   }
 
   section:nth-child(2) .text-panel > h2 {
@@ -209,7 +210,7 @@
   }
 
   section:nth-child(2) .link-button{
-    padding: 3vh 0vh 3vh 0vh;
+    padding: vh 0vh 3vh 0vh;
   } 
 
   section:nth-child(2) .link-button a {
@@ -219,7 +220,7 @@
 
   section:nth-child(2) img{
     max-height: 50vh;
-    min-height: 300px;
+    min-height: 350px;
     width: 50%;
     height: auto;
   }
