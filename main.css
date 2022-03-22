@@ -246,7 +246,7 @@ section:nth-child(1) h1 {
 /* CZYM SIE ZAJMUJEMY*/
 
 section:nth-child(2) {
-  height: 83vh;
+  height: 53vh;
   min-height: 550px;
   background-color: white;
   padding-bottom: 3vh;
@@ -254,7 +254,7 @@ section:nth-child(2) {
 }
 
 section:nth-child(2) .about {
-  padding: 2.5rem 1rem;
+  padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,6 +264,7 @@ section:nth-child(2) .about {
 section:nth-child(2) img {
   width: 100%;
   max-width: 380px;
+  height: auto;
   padding: 0.75rem 0rem 0.75rem 0rem;
   display: flex;
 }
@@ -392,4 +393,3 @@ footer {
   background-color: white;
   background-size: cover;
 }
-.
