@@ -211,14 +211,15 @@ main > section {
   height: 100vh;
 }
 
-main > section > h2 {
+/* Stary napis */
+/* main > section > h1 {
   font-size: 40px;
   background-color: #eee;
   opacity: 80%;
   text-align: center;
   padding: 8px 24px;
   border-radius: 16px;
-}
+} */
 
 section:nth-child(1) {
   position: relative;
@@ -388,8 +389,10 @@ section:nth-child(4) iframe {
   height: 100%;
 }
 
+/* STOPKA */
+
 footer {
-  height: 50vh;
+  height: 35vh;
   background-color: #ffffff;
   overflow: hidden;
   position: relative;
@@ -399,6 +402,53 @@ footer {
   bottom: 0;
   opacity: 0.8;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   position: absolute;
+  z-index: 1;
+}
+
+.footer-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.f-rec{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1vh 20% 1vh 20%;
+}
+
+.f-wrapper{
+  width: 20%;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.f-wrapper > a{
+  font-size: 1rem;
+  z-index: 2;
+  font-weight: 600;
+  color: #3b3b3b;
+  width: 100%;
+  display: flex;
+  justify-content: space-around
+}
+
+.f-wrapper > i{
+  z-index: 2;
+  display: flex;
+  min-width: 48px;
 }
