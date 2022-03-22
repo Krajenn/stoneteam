@@ -393,9 +393,12 @@ section:nth-child(4) iframe {
 
 footer {
   height: 35vh;
+  min-height: 250px;
   background-color: #ffffff;
   overflow: hidden;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .imgbg {
@@ -412,6 +415,7 @@ footer {
 .footer-container{
   height: 100%;
   width: 100%;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -55,6 +55,13 @@
 }
 .icon-facebook:before { content: '\f09a'; font-size: 2rem; padding: 0px; margin: 0px;} /* '' */
 
-.icon-phone:before { content: '\e800'; font-size: 2rem; background-color: #707070; color: white; padding: 0.5rem; border-radius: 1em; margin: 0;} /* '' */
+.icon-phone:before { content: '\e800'; font-size: 2.0rem; background-color: #707070; color: white; padding: 0.5rem; border-radius: 1em; margin: 0;} /* '' */
 .icon-location:before { content: '\e801'; font-size: 2.1rem; background-color: #707070; color: white; padding: 0.451rem; border-radius: 1em; margin: 0;} /* '' */
 .icon-mail-alt:before { content: '\f0e0'; font-size: 1.7rem; background-color: #707070; color: white; padding: 0.651rem; border-radius: 1em; margin: 0;} /* '' */
+
+
+@media (min-width: 1024px){
+.icon-phone:before { content: '\e800'; font-size: 2.5rem; background-color: #707070; color: white; padding: 0.5634rem; border-radius: 1em; margin: 0;} /* '' */
+.icon-location:before { content: '\e801'; font-size: 2.6rem; background-color: #707070; color: white; padding: 0.5136rem; border-radius: 1em; margin: 0;} /* '' */
+.icon-mail-alt:before { content: '\f0e0'; font-size: 2.2rem; background-color: #707070; color: white; padding: 0.713rem; border-radius: 1em; margin: 0;} /* '' */
+}
