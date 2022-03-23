@@ -5,6 +5,6 @@ window.addEventListener("scroll", function () {
 
 $('.scrollDown').on('click', function () {
     $('body, html').animate({
-        scrollTop: $('#sectionScrollTo').offset().top - 30
-    }, 100)
+        scrollTop: $('#sectionScrollTo').offset().top - 20
+    }, 500)
 })
