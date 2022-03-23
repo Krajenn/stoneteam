@@ -159,7 +159,7 @@ header.sticky .topnav {
 .topnav ul > li > a {
   position: relative;
   display: block;
-  font-size: 1rem;
+  font-size: .8rem;
   overflow: hidden;
 }
 
@@ -225,6 +225,7 @@ section:nth-child(1) {
   position: relative;
   height: 100vh;
   width: 100%;
+  font-family: "Montserrat", sans-serif;
 }
 
 .bgFixed {
@@ -240,8 +241,25 @@ section:nth-child(1) {
   z-index: -1;
 }
 
-section:nth-child(1) h1 {
-  position: absolute;
+.slogan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 20vh;
+}
+
+.slogan h1 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  display: block;
+  background-color: rgba(60, 60, 60, 0.8);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
 }
 
 /* CZYM SIE ZAJMUJEMY*/
@@ -382,6 +400,7 @@ ul.swiper-wrapper {
 section:nth-child(4) {
   height: 60vh;
   width: 100%;
+  background-color: white;
 }
 
 section:nth-child(4) iframe {
