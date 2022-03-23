@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-size: 10px;
   background-color: #fff;
@@ -211,7 +207,6 @@ main>section {
   justify-content: center;
   font-weight: bold;
   width: 100%;
-  height: 100vh;
 }
 
 /* Stary napis */
@@ -244,6 +239,10 @@ section:nth-child(1) {
   z-index: -1;
 }
 
+.bgFixed.active {
+  display: none;
+}
+
 .slogan {
   position: relative;
   display: flex;
@@ -259,10 +258,10 @@ section:nth-child(1) {
   font-size: 1.2rem;
   line-height: 1.6rem;
   display: block;
-  background-color: rgba(60, 60, 60, 0.8);
+  background-color: rgba(40, 40, 40, 0.9);
   color: #fff;
   padding: 8px 16px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .scrollDown {
@@ -278,19 +277,12 @@ section:nth-child(1) {
   transform: translateX(-50%);
   z-index: 5;
   border-radius: 50%;
-}
-
-.scrollDown a {
-  display: block;
-  width: 100%;
-  height: 100%;
+  cursor: pointer;
 }
 
 /* CZYM SIE ZAJMUJEMY*/
 
 section:nth-child(2) {
-  height: 53vh;
-  min-height: 550px;
   background-color: white;
   padding-bottom: 3vh;
   padding-top: 3vh;
@@ -335,14 +327,14 @@ section:nth-child(2) .text-panel>h3 {
   padding: 0.5rem;
 }
 
-section:nth-child(2) .link-button {
+.link-button {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.75rem 0rem 0.75rem 0rem;
 }
 
-section:nth-child(2) .link-button a {
+.link-button a {
   font-size: 1rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 2em;
@@ -354,14 +346,14 @@ section:nth-child(2) .link-button a {
   text-align: center;
 }
 
-section:nth-child(2)>.about>.text-panel>.link-button>a:hover {
+.link-button>a:hover {
   text-decoration: none;
   background-color: #707070;
   transform: scale(0.95);
   transition: ease-in-out;
 }
 
-section:nth-child(2)>.about>.text-panel>.link-button>a:active {
+.link-button>a:active {
   text-decoration: none;
   background-color: #707070;
 }
@@ -371,6 +363,7 @@ section:nth-child(2)>.about>.text-panel>.link-button>a:active {
 }
 
 section:nth-child(3) {
+  flex-direction: column;
   height: 53vh;
   width: 100%;
   margin: 0 auto;
