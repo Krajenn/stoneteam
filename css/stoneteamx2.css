@@ -2,13 +2,14 @@
   font-family: 'stoneteamx2';
   src: url('../font/stoneteamx2.eot?76013975');
   src: url('../font/stoneteamx2.eot?76013975#iefix') format('embedded-opentype'),
-       url('../font/stoneteamx2.woff2?76013975') format('woff2'),
-       url('../font/stoneteamx2.woff?76013975') format('woff'),
-       url('../font/stoneteamx2.ttf?76013975') format('truetype'),
-       url('../font/stoneteamx2.svg?76013975#stoneteamx2') format('svg');
+    url('../font/stoneteamx2.woff2?76013975') format('woff2'),
+    url('../font/stoneteamx2.woff?76013975') format('woff'),
+    url('../font/stoneteamx2.ttf?76013975') format('truetype'),
+    url('../font/stoneteamx2.svg?76013975#stoneteamx2') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
@@ -19,7 +20,8 @@
   }
 }
 */
-[class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
   font-family: "stoneteamx2";
   font-style: normal;
   font-weight: normal;
@@ -53,17 +55,90 @@
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
-.icon-down-open-big:before { content: '\e802'; } /* '' */
-.icon-facebook:before { content: '\f09a'; font-size: 2rem; padding: 0px; margin: 0px;} /* '' */
+
+.icon-down-open-big:before {
+  content: '\e802';
+  font-size: 2.2rem;
+}
+
+/* '' */
+.icon-facebook:before {
+  content: '\f09a';
+  font-size: 2rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* '' */
 
 
-.icon-phone:before { content: '\e800'; font-size: 2.0rem; background-color: #707070; color: white; padding: 0.5rem; border-radius: 1em; margin: 0;} /* '' */
-.icon-location:before { content: '\e801'; font-size: 2.1rem; background-color: #707070; color: white; padding: 0.451rem; border-radius: 1em; margin: 0;} /* '' */
-.icon-mail-alt:before { content: '\f0e0'; font-size: 1.7rem; background-color: #707070; color: white; padding: 0.651rem; border-radius: 1em; margin: 0;} /* '' */
+.icon-phone:before {
+  content: '\e800';
+  font-size: 2.0rem;
+  background-color: #707070;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 1em;
+  margin: 0;
+}
+
+/* '' */
+.icon-location:before {
+  content: '\e801';
+  font-size: 2.1rem;
+  background-color: #707070;
+  color: white;
+  padding: 0.451rem;
+  border-radius: 1em;
+  margin: 0;
+}
+
+/* '' */
+.icon-mail-alt:before {
+  content: '\f0e0';
+  font-size: 1.7rem;
+  background-color: #707070;
+  color: white;
+  padding: 0.651rem;
+  border-radius: 1em;
+  margin: 0;
+}
+
+/* '' */
 
 
-@media (min-width: 1024px){
-.icon-phone:before { content: '\e800'; font-size: 2.5rem; background-color: #707070; color: white; padding: 0.5634rem; border-radius: 1em; margin: 0;} /* '' */
-.icon-location:before { content: '\e801'; font-size: 2.6rem; background-color: #707070; color: white; padding: 0.5136rem; border-radius: 1em; margin: 0;} /* '' */
-.icon-mail-alt:before { content: '\f0e0'; font-size: 2.2rem; background-color: #707070; color: white; padding: 0.713rem; border-radius: 1em; margin: 0;} /* '' */
-} 
+@media (min-width: 1024px) {
+  .icon-phone:before {
+    content: '\e800';
+    font-size: 2.5rem;
+    background-color: #707070;
+    color: white;
+    padding: 0.5634rem;
+    border-radius: 1em;
+    margin: 0;
+  }
+
+  /* '' */
+  .icon-location:before {
+    content: '\e801';
+    font-size: 2.6rem;
+    background-color: #707070;
+    color: white;
+    padding: 0.5136rem;
+    border-radius: 1em;
+    margin: 0;
+  }
+
+  /* '' */
+  .icon-mail-alt:before {
+    content: '\f0e0';
+    font-size: 2.2rem;
+    background-color: #707070;
+    color: white;
+    padding: 0.713rem;
+    border-radius: 1em;
+    margin: 0;
+  }
+
+  /* '' */
+}
