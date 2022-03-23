@@ -29,6 +29,12 @@
       "css": "location",
       "code": 59393,
       "src": "fontawesome"
+    },
+    {
+      "uid": "289b5f92f23acf1059c93fbf401c1ad5",
+      "css": "down-open-big",
+      "code": 59394,
+      "src": "entypo"
     }
   ]
 }
