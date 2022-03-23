@@ -154,6 +154,8 @@ header.sticky .topnav {
 
 .topnav ul>li {
   list-style: none;
+  width: 100%;
+  text-align: center;
 }
 
 .topnav ul>li>a {
