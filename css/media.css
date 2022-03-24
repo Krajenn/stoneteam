@@ -397,4 +397,9 @@
   section:nth-child(3) {
     height: 70vh;
   }
+
+  /* FOOTER */
+  footer {
+    height: 22vh;
+  }
 }
