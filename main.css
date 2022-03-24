@@ -152,58 +152,59 @@ header.sticky .topnav {
   line-height: 10vh;
 }
 
-.topnav ul>li {
+.topnav ul > li {
   list-style: none;
   width: 100%;
   text-align: center;
 }
 
-.topnav ul>li>a {
+.topnav ul > li > a {
   position: relative;
   display: block;
-  font-size: .8rem;
+  font-size: 0.8rem;
   overflow: hidden;
 }
 
-.topnav ul>li>a:link {
+.topnav ul > li > a:link {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
 
-.topnav ul>li>a:visited {
+.topnav ul > li > a:visited {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
 
-.topnav ul>li>a:hover {
+.topnav ul > li > a:hover {
   color: #585858;
 }
 
-.topnav ul>li>a:active {}
+.topnav ul > li > a:active {
+}
 
 /* fb */
 
-.topnav ul>li>i:link {
+.topnav ul > li > i:link {
   text-decoration: none;
 }
 
-.topnav ul>li>i:visited {
+.topnav ul > li > i:visited {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
 
-.topnav ul>li>i:hover {
+.topnav ul > li > i:hover {
   color: #585858;
   cursor: pointer;
 }
 
-.topnav ul>li>i:active {
+.topnav ul > li > i:active {
   text-decoration: underline;
 }
 
 /* MAIN */
 
-main>section {
+main > section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -313,14 +314,14 @@ section:nth-child(2) .text-panel {
   align-items: center;
 }
 
-section:nth-child(2) .text-panel>h2 {
+section:nth-child(2) .text-panel > h2 {
   display: flex;
   font-size: 1rem;
   text-align: center;
   padding: 0.5rem;
 }
 
-section:nth-child(2) .text-panel>h3 {
+section:nth-child(2) .text-panel > h3 {
   display: flex;
   max-width: 380px;
   font-size: 0.8rem;
@@ -348,19 +349,19 @@ section:nth-child(2) .text-panel>h3 {
   text-align: center;
 }
 
-.link-button>a:hover {
+.link-button > a:hover {
   text-decoration: none;
   background-color: #707070;
   transform: scale(0.95);
   transition: ease-in-out;
 }
 
-.link-button>a:active {
+.link-button > a:active {
   text-decoration: none;
   background-color: #707070;
 }
 
-.section:nth-child(2)>.about>.text-panel>.link-button>a:visited {
+.section:nth-child(2) > .about > .text-panel > .link-button > a:visited {
   text-decoration: none;
 }
 
@@ -405,7 +406,7 @@ ul.swiper-wrapper {
   align-items: center;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -479,18 +480,66 @@ footer {
   justify-content: flex-start;
 }
 
-.f-wrapper>a {
+.f-wrapper > a {
   font-size: 1rem;
   z-index: 2;
   font-weight: 600;
   color: #3b3b3b;
   width: 100%;
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
-.f-wrapper>i {
+.f-wrapper > i {
   z-index: 2;
   display: flex;
   min-width: 48px;
+}
+
+/* SUBPAGE O-NAS */
+
+.mainphoto {
+  height: 43vh !important;
+  background-image: url(img/onas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainphoto > .slogan {
+  height: 15vh;
+  justify-content: flex-end;
+}
+
+.case {
+  padding: 3vh 1rem 3vh 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.case > h2 {
+  font-size: 1.5rem;
+  color: #3b3b3b;
+  padding-top: 1.5vh;
+}
+
+.case p{
+  padding: 1.5vh 0;
+}
+
+.line {
+  height: 4px;
+  width: 100%;
+  border-radius: 1em;
+  opacity: 65%;
+  background-color: black;
+  margin-bottom: 1.5vh;
+}
+
+.case > h3 {
+  font-size: 0.8rem;
+  color: #585858;
+  padding: 1vh 0;
+  text-align: left;
 }
