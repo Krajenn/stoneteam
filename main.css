@@ -506,7 +506,8 @@ footer {
 }
 
 .mainphoto > .slogan {
-  height: 15vh;
+  margin-top: 12vh;
+  height: auto;
   justify-content: flex-end;
 }
 
@@ -521,7 +522,6 @@ footer {
 .case > h2 {
   font-size: 1.5rem;
   color: #3b3b3b;
-  padding-top: 1.5vh;
 }
 
 .case p{
@@ -542,4 +542,11 @@ footer {
   color: #585858;
   padding: 1vh 0;
   text-align: left;
+}
+
+.two-clickers{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
 }
