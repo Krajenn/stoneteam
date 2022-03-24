@@ -1,6 +1,13 @@
 $('.scrollDown').on('click', function () {
+    let headerHeight = 0;
+    if (window.innerWidth < 1024) {
+        headerHeight = $('header').height() / 12 * 9.9;
+    } else if (window.innerWidth >= 1024) {
+        headerHeight = $('header').height() / 8 * 5.9;
+    }
+
     $('body, html').animate({
-        scrollTop: $('#sectionScrollTo').offset().top - $('header').height() / 12 * 9.9
+        scrollTop: $('#sectionScrollTo').offset().top - headerHeight
     }, 500)
 })
 
