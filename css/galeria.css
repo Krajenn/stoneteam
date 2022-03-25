@@ -1,4 +1,7 @@
 /* GALERIA */
+body {
+    font-size: 10px;
+}
 
 .mainphotoG {
     height: 43vh;
@@ -6,7 +9,7 @@
     overflow: hidden;
     position: relative;
 
-    margin-bottom: 3vh;
+    margin-bottom: 1vh;
 }
 
 .mainphotoG .slogan {
@@ -33,21 +36,28 @@
 /* GALERIA */
 
 .gallery {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     width: 100%;
     padding: 0 4%;
+    margin-bottom: 3vh;
 }
 
-.galleryImg {
+.gallery ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.gallery ul li {
     width: 46%;
     height: 30vh;
     overflow: hidden;
     margin-top: 2vh;
+    display: block;
 }
 
-.galleryImg img {
-    display: block;
-    object-fit: contain;
+.gallery ul li img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
