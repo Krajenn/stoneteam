@@ -58,28 +58,37 @@
             </div>
         </section>
         <section class="gallery">
-            <ul class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-                <li itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a title="click to zoom-in" href="img/swiper/1.jpg" itemprop="contentUrl" data-size="768x1024">
+            <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="img/swiper/1.jpg" itemprop="contentUrl" data-size="768x1024">
                         <img src="img/swiper/1.jpg" itemprop="thumbnail" alt="Image description" />
                     </a>
-                </li>
-                <li itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a title="click to zoom-in" href="img/swiper/2.jpg" itemprop="contentUrl" data-size="768x1024">
+                    <figcaption itemprop="caption description">Nr 1</figcaption>
+                </figure>
+
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="img/swiper/2.jpg" itemprop="contentUrl" data-size="768x1024">
                         <img src="img/swiper/2.jpg" itemprop="thumbnail" alt="Image description" />
                     </a>
-                </li>
-                <li itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a title="click to zoom-in" href="img/swiper/2.jpg" itemprop="contentUrl" data-size="768x1024">
-                        <img src="img/swiper/2.jpg" itemprop="thumbnail" alt="Image description" />
+                    <figcaption itemprop="caption description">Nr 2</figcaption>
+                </figure>
+
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="img/swiper/3.jpg" itemprop="contentUrl" data-size="1536x2048">
+                        <img src="img/swiper/3.jpg" itemprop="thumbnail" alt="Image description" />
                     </a>
-                </li>
-                <li itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a title="click to zoom-in" href="img/swiper/2.jpg" itemprop="contentUrl" data-size="768x1024">
-                        <img src="img/swiper/2.jpg" itemprop="thumbnail" alt="Image description" />
+                    <figcaption itemprop="caption description">Nr 3</figcaption>
+                </figure>
+
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="img/swiper/4.jpg" itemprop="contentUrl" data-size="720x960">
+                        <img src="img/swiper/4.jpg" itemprop="thumbnail" alt="Image description" />
                     </a>
-                </li>
-            </ul>
+                    <figcaption itemprop="caption description">Nr 4</figcaption>
+                </figure>
+
+            </div>
         </section>
     </main>
     <footer>
@@ -186,6 +195,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="photoswipe/dist/photoswipe.min.js"></script>
     <script src="photoswipe/dist/photoswipe-ui-default.min.js"></script>
+    <script src="javascript/photoswipe.js"></script>
     <script src="javascript/app.js"></script>
 </body>
 
