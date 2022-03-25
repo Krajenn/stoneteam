@@ -1,4 +1,7 @@
 /* SUBPAGE O-NAS */
+body {
+    font-size: 10px;
+}
 
 .mainphoto {
     height: 43vh;
