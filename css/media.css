@@ -190,7 +190,7 @@
   }
 }
 
-@media (min-width: 1024px) and (min-height: 1000px) {
+@media (min-width: 1024px) {
   header {
     padding: 0;
     height: 8vh;
