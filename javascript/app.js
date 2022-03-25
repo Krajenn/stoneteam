@@ -15,16 +15,18 @@ $('.scrollDown').on('click', function () {
 })
 
 // STICKY HEADER + mobile bg fixed delete
-let bgFixed = document.querySelector('.bgFixed');
-let galleryPosition = document.querySelector('#sectionScrollTo').offsetTop + 20;
+let bgFixed = document.querySelector('.bgFixed') !== null ? document.querySelector('.bgFixed') : null;
+let galleryPosition = document.querySelector('#sectionScrollTo') !== null ? document.querySelector('#sectionScrollTo').offsetTop + 20 : null;
 window.addEventListener("scroll", function () {
     var header = this.document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 0);
 
-    if (window.scrollY > galleryPosition) {
-        bgFixed.classList.add('active');
-    } else if (window.scrollY < galleryPosition) {
-        bgFixed.classList.remove('active');
+    if (galleryPosition) {
+        if (window.scrollY > galleryPosition) {
+            bgFixed.classList.add('active');
+        } else if (window.scrollY < galleryPosition) {
+            bgFixed.classList.remove('active');
+        }
     }
 })
 
