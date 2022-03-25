@@ -10,13 +10,13 @@ $('.scrollDown').on('click', function () {
     }
 
     $('body, html').animate({
-        scrollTop: $('#sectionScrollTo').offset().top - headerHeight
+        scrollTop: $('.sectionAbout').offset().top - headerHeight
     }, 500)
 })
 
 // STICKY HEADER + mobile bg fixed delete
 let bgFixed = document.querySelector('.bgFixed') !== null ? document.querySelector('.bgFixed') : null;
-let galleryPosition = document.querySelector('#sectionScrollTo') !== null ? document.querySelector('#sectionScrollTo').offsetTop + 20 : null;
+let galleryPosition = document.querySelector('.sectionAbout') !== null ? document.querySelector('.sectionAbout').offsetTop + 20 : null;
 window.addEventListener("scroll", function () {
     var header = this.document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 0);

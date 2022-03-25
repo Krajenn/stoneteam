@@ -1,0 +1,18 @@
+/* GALERIA */
+
+.mainphotoG {
+    height: 43vh !important;
+
+    margin-bottom: 20vh;
+}
+
+.mainphotoG .slogan {
+    margin-top: 12vh;
+    justify-content: space-around;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.mainphotoG .slogan h2 {
+    font-size: .9rem;
+}

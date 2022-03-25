@@ -211,7 +211,7 @@ main>section {
   width: 100%;
 }
 
-section:nth-child(1) {
+.sectionSlogan {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -274,13 +274,13 @@ section:nth-child(1) {
 
 /* CZYM SIE ZAJMUJEMY*/
 
-section:nth-child(2) {
+.sectionAbout {
   background-color: white;
   padding-bottom: 3vh;
   padding-top: 3vh;
 }
 
-section:nth-child(2) .about {
+.sectionAbout .about {
   padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
@@ -288,7 +288,7 @@ section:nth-child(2) .about {
   align-items: center;
 }
 
-section:nth-child(2) img {
+.sectionAbout img {
   width: 100%;
   max-width: 380px;
   height: auto;
@@ -296,21 +296,21 @@ section:nth-child(2) img {
   display: flex;
 }
 
-section:nth-child(2) .text-panel {
+.sectionAbout .text-panel {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-section:nth-child(2) .text-panel>h2 {
+.sectionAbout .text-panel>h2 {
   display: flex;
   font-size: 1rem;
   text-align: center;
   padding: 0.5rem;
 }
 
-section:nth-child(2) .text-panel>h3 {
+.sectionAbout .text-panel>h3 {
   display: flex;
   max-width: 380px;
   font-size: 0.8rem;
@@ -350,11 +350,11 @@ section:nth-child(2) .text-panel>h3 {
   background-color: #707070;
 }
 
-.section:nth-child(2)>.about>.text-panel>.link-button>a:visited {
+.sectionAbout>.about>.text-panel>.link-button>a:visited {
   text-decoration: none;
 }
 
-section:nth-child(3) {
+.sectionGallery {
   flex-direction: column;
   height: 53vh;
   width: 100%;
@@ -406,13 +406,13 @@ ul.swiper-wrapper {
 
 /* MAP */
 
-section:nth-child(4) {
+.sectionMap {
   height: 60vh;
   width: 100%;
   background-color: white;
 }
 
-section:nth-child(4) iframe {
+.sectionMap iframe {
   width: 100%;
   height: 100%;
 }
@@ -431,7 +431,7 @@ footer {
 
 .imgbg {
   bottom: 0;
-  opacity: 0.8;
+  opacity: .8;
   width: 100%;
   height: 100%;
   object-fit: cover;
