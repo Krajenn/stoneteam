@@ -1,6 +1,6 @@
-# stoneteam
+# stoneteam 
 
-//linki do inspiracji 
+//inspiration links
 
 http://www.pasjakamienia.pl/
 
