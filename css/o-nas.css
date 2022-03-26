@@ -1,0 +1,64 @@
+/* SUBPAGE O-NAS */
+body {
+    font-size: 10px;
+}
+
+.mainphoto {
+    height: 43vh;
+    width: 100%;
+    background-image: url('../img/onas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mainphoto>.slogan {
+    margin-top: 12vh;
+    height: auto;
+    justify-content: flex-end;
+}
+
+.case {
+    max-width: 100%;
+    padding: 3vh 1rem 3vh 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.case>h2 {
+    font-size: 1.5rem;
+    color: #3b3b3b;
+}
+
+.case p {
+    padding: 1.5vh 0;
+}
+
+.case img {
+    max-width: 100%;
+}
+
+.line {
+    height: 4px;
+    width: 100%;
+    border-radius: 1em;
+    opacity: 65%;
+    background-color: black;
+    margin-bottom: 1.5vh;
+}
+
+.case>h3 {
+    font-size: 0.8rem;
+    color: #585858;
+    padding: 1vh 0;
+    text-align: left;
+}
+
+.two-clickers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
