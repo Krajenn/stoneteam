@@ -188,6 +188,12 @@
     height: 48px;
     font-size: 1.1rem;
   }
+
+  /* SUBPAGE GALERIA */
+  .mainphotoG .slogan h2 {
+    font-size: 1.8rem;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -300,6 +306,7 @@
   .sectionAbout {
     /* height: 53vh;
     min-height: 400px; */
+    max-width: 1400px;
   }
 
   .sectionAbout .about {
@@ -360,6 +367,27 @@
   .f-wrapper>a {
     height: 58px;
     font-size: 1.3rem;
+  }
+
+  /* SUBPAGE GALLERY */
+  .gallery {
+    padding: 0 2%;
+  }
+
+  .my-gallery figure {
+    width: 31%;
+  }
+
+  .mainphotoG .slogan h2 {
+    font-size: 2rem;
+  }
+}
+
+@media(min-width: 1200px) {
+
+  /* SUBPAGE GALLERY */
+  .my-gallery figure {
+    width: 18%;
   }
 }
 

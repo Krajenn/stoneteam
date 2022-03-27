@@ -184,6 +184,7 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
             counterEl: false,
             arrowEl: true,
             preloaderEl: true,
+            bgOpacity: 0.9,
             // define gallery index (for URL)
             galleryUID: galleryElement.getAttribute("data-pswp-uid"),
             getThumbBoundsFn: function (index) {

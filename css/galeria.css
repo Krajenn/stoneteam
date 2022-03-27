@@ -33,10 +33,9 @@ body {
     z-index: 1;
 }
 
-/* GALERIA */
-
 .gallery {
     width: 100%;
+    max-width: 1400px;
     padding: 0 4%;
     margin-bottom: 3vh;
 }
@@ -50,14 +49,54 @@ body {
 
 .my-gallery figure {
     width: 46%;
-    height: 30vh;
     overflow: hidden;
     margin-top: 2vh;
     display: block;
+    position: relative;
+    background-color: black;
 }
+
+/* .my-gallery figure::before{
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 100%;
+} */
 
 .my-gallery figure a img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: .2s;
+}
+
+.my-gallery figure:hover img {
+    opacity: .5;
+    transform: scale(1.1);
+}
+
+.my-gallery figure:hover .zoomIcon{
+    opacity: 1;
+}
+
+.pswp img {
+    max-width: none;
+    object-fit: contain;
+}
+
+.zoomIcon {
+    opacity: 0;
+    color: white;
+    font-size: 2rem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: .2s;
+}
+
+.my-gallery figure a img:hover .zoom {
+    display: block;
 }
