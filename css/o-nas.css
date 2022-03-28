@@ -42,10 +42,10 @@ body {
 }
 
 .line {
-    height: 3px;
+    height: 2px;
     width: 100%;
     border-radius: 1em;
-    opacity: 65%;
+    opacity: 55%;
     background-color: black;
     margin-bottom: 1.5vh;
 }
