@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Stone Team/strona-główna/</title>
+  <title>Stone Team/kontakt/</title>
   <meta name="description"
     content="Zakład Kamieniarski Granity Gdańsk Sp. z o.o. zajmuje się sprzedażą, obróbką oraz montażem wyrobów z kamienia naturalnego" />
   <!-- do uzgodnienia z patrykiem co chce  w opisie-->
@@ -21,6 +21,7 @@
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/kontakt.css">
 </head>
 
 <body>
@@ -53,41 +54,40 @@
         <h1>Kontakt</h1>
       </div>
     </section>
-    <section class="data">
-      <h2>Dane Firmy</h2>
-    </section>
-  </main>
-  <!-- <footer>
-    <img class="imgbg" src="img/footer.jpg" alt="bg">
-    <div class="footer-container">
-      <div class="f-rec">
-        <div class="f-wrapper">
+    <section class="formsection">
+      <div class="datacontainer">
+        <h2>Dane Firmy</h2>
+        <div class="data">
+          <i class="icon-mail-alt"></i>
+          <h3> ul. Łostowicka 35 80-801 Gdańsk </h3>
+        </div>
+        <div class="data">
           <i class="icon-phone"></i>
-          <a>
+          <h3>
             516
             774
             555
-          </a>
+          </h3>
         </div>
-      </div>
-      <div class="f-rec">
-        <div class="f-wrapper">
-          <i class="icon-mail-alt"></i>
-          <a>stoneteam@gmail.com</a>
-        </div>
-      </div>
-      <div class="f-rec">
-        <div class="f-wrapper">
+        <div class="data">
           <i class="icon-location"></i>
-          <a>
-            ul. Łostowicka 35
-            <br>
-            80-801 Gdańsk
-          </a>
+          <h3>
+            stoneteam@gmail.com
+          </h3>
         </div>
+        <!-- NIP? -->
       </div>
-    </div>
-  </footer> -->
+      <form class="contact-box">
+        <h2>Formularz Kontaktowy</h2>
+        <input type="text" class="field" placeholder="Imię i Nazwisko">
+				<input type="text" class="field" placeholder="E-mail*" required>
+				<input type="text" class="field" placeholder="Temat">
+				<textarea placeholder="Treść*" class="field" required></textarea>
+        <label id="check"><input type="checkbox" required><a>* Wyrażam zgodę na przetwarzanie moich danych kontaktowych i treści uzupełnionej w formularzu w celu nawiązania kontaktu i odpowiedzi na moją wiadomość.</a></label>
+				<div id="btn"><button><a>Wyślij</a></button></div>
+      </form>
+    </section>
+  </main>
 
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
