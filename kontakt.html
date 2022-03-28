@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Stone Team/strona-główna/</title>
+  <title>Stone Team/kontakt/</title>
   <meta name="description"
     content="Zakład Kamieniarski Granity Gdańsk Sp. z o.o. zajmuje się sprzedażą, obróbką oraz montażem wyrobów z kamienia naturalnego" />
   <!-- do uzgodnienia z patrykiem co chce  w opisie-->
@@ -21,6 +21,7 @@
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/kontakt.css">
 </head>
 
 <body>
@@ -53,8 +54,37 @@
         <h1>Kontakt</h1>
       </div>
     </section>
-    <section class="data">
-      <h2>Dane Firmy</h2>
+    <section class="formsection">
+      <div class="datacontainer">
+        <h2>Dane Firmy</h2>
+        <div class="data">
+          <i class="icon-mail-alt"></i>
+          <h3> ul. Łostowicka 35 80-801 Gdańsk </h3>
+        </div>
+        <div class="data">
+          <i class="icon-phone"></i>
+          <h3>
+            516
+            774
+            555
+          </h3>
+        </div>
+        <div class="data">
+          <i class="icon-location"></i>
+          <h3>
+            stoneteam@gmail.com
+          </h3>
+        </div>
+        <!-- NIP? -->
+      </div>
+      <form class="contact-box">
+        <h2>Formularz Kontaktowy</h2>
+        <input type="text" class="field" placeholder="Imię i Nazwisko">
+				<input type="text" class="field" placeholder="E-mail">
+				<input type="text" class="field" placeholder="Temat">
+				<textarea placeholder="Treść" class="field"></textarea>
+				<button class="btn">Wyślij</button>
+      </form>
     </section>
   </main>
   <!-- <footer>
