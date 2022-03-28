@@ -161,3 +161,9 @@ body {
   transform: scale(1.2);
   margin: 2px;
 }
+
+textarea{
+  overflow-y: scroll;
+  height: 100px;
+  resize: none;
+}
