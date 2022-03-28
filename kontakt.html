@@ -80,44 +80,14 @@
       <form class="contact-box">
         <h2>Formularz Kontaktowy</h2>
         <input type="text" class="field" placeholder="Imię i Nazwisko">
-				<input type="text" class="field" placeholder="E-mail">
+				<input type="text" class="field" placeholder="E-mail*" required>
 				<input type="text" class="field" placeholder="Temat">
-				<textarea placeholder="Treść" class="field"></textarea>
-				<button class="btn">Wyślij</button>
+				<textarea placeholder="Treść*" class="field" required></textarea>
+        <label id="check"><input type="checkbox" required><a>* Wyrażam zgodę na przetwarzanie moich danych kontaktowych i treści uzupełnionej w formularzu w celu nawiązania kontaktu i odpowiedzi na moją wiadomość.</a></label>
+				<div id="btn"><button><a>Wyślij</a></button></div>
       </form>
     </section>
   </main>
-  <!-- <footer>
-    <img class="imgbg" src="img/footer.jpg" alt="bg">
-    <div class="footer-container">
-      <div class="f-rec">
-        <div class="f-wrapper">
-          <i class="icon-phone"></i>
-          <a>
-            516
-            774
-            555
-          </a>
-        </div>
-      </div>
-      <div class="f-rec">
-        <div class="f-wrapper">
-          <i class="icon-mail-alt"></i>
-          <a>stoneteam@gmail.com</a>
-        </div>
-      </div>
-      <div class="f-rec">
-        <div class="f-wrapper">
-          <i class="icon-location"></i>
-          <a>
-            ul. Łostowicka 35
-            <br>
-            80-801 Gdańsk
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer> -->
 
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
