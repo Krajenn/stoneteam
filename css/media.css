@@ -306,7 +306,7 @@
   .sectionAbout {
     /* height: 53vh;
     min-height: 400px; */
-    max-width: 1400px;
+    width: 100%;
   }
 
   .sectionAbout .about {
