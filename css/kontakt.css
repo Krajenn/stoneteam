@@ -47,6 +47,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding-bottom: 0.5rem;
 }
 
 .datamain {
@@ -76,18 +77,30 @@ body {
   flex-direction: column;
   padding: 1rem;
   width: 100%;
+  align-items: center;
 }
 
 .contact-box > h2 {
-  padding-bottom: 1rem;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.contact-box>a{
+  font-size: 0.5rem;
+  text-align: justify;
+  align-items: center;
+  font-weight: 200;
+  color: #414141;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .field {
   width: 100%;
+  border: none;
   border: 1px solid #7070704d;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   background-color: #b1b0b06b;
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
@@ -133,7 +146,6 @@ body {
 
 #check {
   display: flex;
-  margin-bottom: 1rem;
 }
 
 #check > a {
@@ -143,4 +155,15 @@ body {
   align-items: center;
   font-weight: 200;
   color: #414141;
+}
+
+#check > input[type=checkbox]{
+  transform: scale(1.2);
+  margin: 2px;
+}
+
+textarea{
+  overflow-y: scroll;
+  height: 100px;
+  resize: none;
 }
