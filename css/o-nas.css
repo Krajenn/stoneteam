@@ -6,20 +6,20 @@ body {
 .mainphoto {
     height: 43vh;
     width: 100%;
-    background-image: url('../img/onas.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.mainphoto>.slogan {
+.mainphoto .slogan {
     margin-top: 12vh;
     height: auto;
     justify-content: flex-end;
+    z-index: 2;
 }
 
 .case {
-    max-width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
     padding: 3vh 1rem 3vh 1rem;
     display: flex;
     flex-direction: column;
