@@ -38,8 +38,8 @@ body {
   padding: 3vh 1rem 3vh 1rem;
 }
 
-.formsection > h2 {
-  font-size: 1rem;
+.datacontainer > h2 {
+  font-size: 1.2rem;
 }
 
 .datacontainer {
@@ -66,10 +66,11 @@ body {
 
 .data > h3 {
   padding-left: 1rem;
+  font-size: 0.8rem;
 }
 
 .data > i {
-  padding-left: 1.8rem;
+  padding-left: 1.1rem;
 }
 
 .contact-box {
@@ -82,18 +83,20 @@ body {
 
 .contact-box > h2 {
   display: flex;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
   justify-content: center;
   flex-direction: column;
 }
 
 .contact-box>a{
-  font-size: 0.5rem;
-  text-align: justify;
-  align-items: center;
+  font-size: 0.6rem;
   font-weight: 200;
+  text-align: right;
   color: #414141;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .field {
@@ -150,7 +153,7 @@ body {
 
 #check > a {
   padding-left: 0.5rem;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   text-align: justify;
   align-items: center;
   font-weight: 200;

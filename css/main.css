@@ -296,8 +296,7 @@ main > section {
 
 .sectionAbout img {
   width: 100%;
-  max-width: 380px;
-  height: auto;
+  max-width: 420px;
   padding: 0.75rem 0rem 0.75rem 0rem;
   display: flex;
 }
@@ -311,16 +310,17 @@ main > section {
 
 .sectionAbout .text-panel > h2 {
   display: flex;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   padding: 0.5rem;
 }
 
 .sectionAbout .text-panel > h3 {
   display: flex;
-  max-width: 380px;
-  font-size: 0.8rem;
-  font-weight: 300;
+  color: #585858;
+  max-width: 400px;
+  font-size: 1rem;
+  font-weight: 420;
   text-align: justify;
   padding: 0.5rem;
 }
@@ -452,7 +452,7 @@ footer {
   max-width: 1400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding-top: 3vh;
   padding-bottom: 3vh;
@@ -482,19 +482,19 @@ footer {
   justify-content: flex-start;
 }
 
-.f-wrapper > a:hover{
+.f-wrapper > a:hover {
   text-decoration: none;
 }
 
-.f-wrapper > a:active{
+.f-wrapper > a:active {
   text-decoration: none;
 }
 
-.f-wrapper > a:visited{
+.f-wrapper > a:visited {
   text-decoration: none;
 }
 
-.f-wrapper > a{
+.f-wrapper > a {
   text-decoration: none;
 }
 
@@ -508,69 +508,9 @@ footer {
   justify-content: space-around;
 }
 
-.f-wrapper > a> i {
+.f-wrapper > a > i {
   z-index: 2;
   display: flex;
   min-width: 48px;
 }
 
-/* SUBPAGE O-NAS */
-
-.mainphoto {
-  height: 43vh !important;
-  background-image: url("../img/footer.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.mainphoto > .slogan {
-  margin-top: 12vh;
-  height: auto;
-  justify-content: flex-end;
-}
-
-.case {
-  padding: 3vh 1rem 3vh 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.case > h2 {
-  font-size: 1.5rem;
-  color: #3b3b3b;
-}
-
-.case p {
-  padding: 1.5vh 0;
-}
-
-.line {
-  height: 4px;
-  width: 100%;
-  border-radius: 1em;
-  opacity: 65%;
-  background-color: black;
-  margin-bottom: 1.5vh;
-}
-
-.case > h3 {
-  font-size: 0.8rem;
-  color: #585858;
-  padding: 1vh 0;
-  text-align: left;
-}
-
-.two-clickers {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-/* KONTAKT */
-
-.data {
-}
