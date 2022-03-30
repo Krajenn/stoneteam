@@ -1,6 +1,7 @@
 @media (min-width: 380px) {
+
   /* NAV */
-  .topnav ul > li > a {
+  .topnav ul>li>a {
     font-size: 1rem;
   }
 
@@ -20,11 +21,11 @@
     /* height: 70vh; */
   }
 
-  .sectionAbout .text-panel > h3 {
+  .sectionAbout .text-panel>h3 {
     font-size: 1rem;
   }
 
-  .sectionAbout .text-panel > h2 {
+  .sectionAbout .text-panel>h2 {
     font-size: 1.5rem;
   }
 
@@ -38,8 +39,9 @@
 }
 
 @media (min-width: 480px) {
+
   /* NAV */
-  .topnav ul > li > a {
+  .topnav ul>li>a {
     font-size: 1.2rem;
   }
 
@@ -59,7 +61,7 @@
     /* height: 60vh; */
   }
 
-  .sectionAbout .text-panel > h3 {
+  .sectionAbout .text-panel>h3 {
     max-width: max-content;
     width: 85%;
     max-width: 510px;
@@ -82,19 +84,20 @@
     height: 25vh;
   }
 
-  .f-wrapper > a > p {
+  .f-wrapper>a>p {
     font-size: 1.2rem;
   }
 
-  .f-wrapper > a {
+  .f-wrapper>a {
     width: 20%;
     min-width: 300px;
   }
 }
 
 @media (min-width: 768px) {
+
   /* NAV */
-  .topnav ul > li > a {
+  .topnav ul>li>a {
     font-size: 1.4rem;
   }
 
@@ -132,14 +135,14 @@
     width: 60%;
   }
 
-  .sectionAbout .text-panel > h3 {
+  .sectionAbout .text-panel>h3 {
     max-width: max-content;
     width: 90%;
     font-size: 1.1rem;
     padding: 0.5rem 0rem 0.5rem 0rem;
   }
 
-  .sectionAbout .text-panel > h2 {
+  .sectionAbout .text-panel>h2 {
     font-size: 1.3rem;
     padding: 0.75rem 0rem 0rem 0rem;
   }
@@ -173,12 +176,12 @@
     align-items: flex-start;
   }
 
-  .f-wrapper > a {
+  .f-wrapper>a {
     min-width: 230px;
     flex-direction: column;
   }
 
-  .f-wrapper > a > p {
+  .f-wrapper>a>p {
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -216,8 +219,7 @@
     max-height: 80%;
   }
 
-  .logo__link {
-  }
+  .logo__link {}
 
   .topnav {
     max-width: 65%;
@@ -239,30 +241,30 @@
     flex-direction: row;
     flex-wrap: nowrap;
     height: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
+    line-height: auto;
   }
 
-  .topnav ul > li {
+  .topnav ul>li {
     line-height: normal;
-    width: 100%;
+    width: auto;
     height: 100%;
-    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-sizing: content-box;
   }
 
   .topnav ul li a {
     font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     white-space: nowrap;
-    width: 100%;
-    height: 100%;
+    display: block;
+    padding: 10px 15px;
   }
 
-  header.sticky .topnav ul li a {
-  }
-
-  .topnav ul > li > i {
+  .topnav ul>li>i {
     display: flex;
     justify-content: center;
     padding: 0;
@@ -270,20 +272,24 @@
 
   /* underline */
 
-  .topnav ul > li > a::after {
+  .topnav ul li a::after {
     display: block;
     content: "";
     height: 2px;
     width: 100%;
     background-color: #585858;
     position: absolute;
-    bottom: 20%;
+    bottom: 0;
     left: 0;
-    transform: translateX(-110%);
+    transform: translateX(-105%);
     transition: 0.2s ease-in-out;
   }
 
-  .topnav ul > li > a:hover::after {
+  .topnav ul li:last-child a::after {
+    display: none;
+  }
+
+  .topnav ul li a:hover::after {
     transform: translateX(0);
   }
 
@@ -304,13 +310,13 @@
     max-width: 1400px;
   }
 
-  .sectionAbout .text-panel > h2 {
+  .sectionAbout .text-panel>h2 {
     font-size: 1.7rem;
     /* padding: 1rem; */
     padding: 2vh 0vh 2vh 0vh;
   }
 
-  .sectionAbout .text-panel > h3 {
+  .sectionAbout .text-panel>h3 {
     width: 50%;
     min-width: 470px;
     font-size: 1.2rem;
@@ -355,7 +361,7 @@
     height: 116px;
   }
 
-  .f-wrapper > a > p{
+  .f-wrapper>a>p {
     height: 58px;
     font-size: 1.3rem;
   }
@@ -375,6 +381,7 @@
 }
 
 @media (min-width: 1200px) {
+
   /* SUBPAGE GALLERY */
   .my-gallery figure {
     width: 18%;
@@ -384,6 +391,7 @@
 /* LANDSCAPE */
 
 @media (min-width: 1024px) and (max-height: 1000px) {
+
   /* HEADER */
   header {
     padding: 0;
