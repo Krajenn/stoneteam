@@ -157,58 +157,59 @@ header.sticky .topnav {
   line-height: 10vh;
 }
 
-.topnav ul>li {
+.topnav ul > li {
   list-style: none;
   width: 100%;
   text-align: center;
 }
 
-.topnav ul>li>a {
+.topnav ul > li > a {
   position: relative;
   display: block;
   font-size: 0.8rem;
   overflow: hidden;
 }
 
-.topnav ul>li>a:link {
+.topnav ul > li > a:link {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
 
-.topnav ul>li>a:visited {
+.topnav ul > li > a:visited {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
 
-.topnav ul>li>a:hover {
+.topnav ul > li > a:hover {
   color: #585858;
 }
 
-.topnav ul>li>a:active {}
+.topnav ul > li > a:active {
+}
 
 /* fb */
 
-.topnav ul>li>i:link {
+.topnav ul > li > i:link {
   text-decoration: none;
 }
 
-.topnav ul>li>i:visited {
+.topnav ul > li > i:visited {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
 
-.topnav ul>li>i:hover {
+.topnav ul > li > i:hover {
   color: #585858;
   cursor: pointer;
 }
 
-.topnav ul>li>i:active {
+.topnav ul > li > i:active {
   text-decoration: underline;
 }
 
 /* MAIN */
 
-main>section {
+main > section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -308,14 +309,14 @@ main>section {
   align-items: center;
 }
 
-.sectionAbout .text-panel>h2 {
+.sectionAbout .text-panel > h2 {
   display: flex;
   font-size: 1rem;
   text-align: center;
   padding: 0.5rem;
 }
 
-.sectionAbout .text-panel>h3 {
+.sectionAbout .text-panel > h3 {
   display: flex;
   max-width: 380px;
   font-size: 0.8rem;
@@ -343,19 +344,19 @@ main>section {
   text-align: center;
 }
 
-.link-button>a:hover {
+.link-button > a:hover {
   text-decoration: none;
   background-color: #707070;
   transform: scale(0.95);
   transition: ease-in-out;
 }
 
-.link-button>a:active {
+.link-button > a:active {
   text-decoration: none;
   background-color: #707070;
 }
 
-.sectionAbout>.about>.text-panel>.link-button>a:visited {
+.sectionAbout > .about > .text-panel > .link-button > a:visited {
   text-decoration: none;
 }
 
@@ -400,7 +401,7 @@ ul.swiper-wrapper {
   align-items: center;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -436,7 +437,7 @@ footer {
 
 .imgbg {
   bottom: 0;
-  opacity: .8;
+  opacity: 0.8;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -469,12 +470,36 @@ footer {
 .f-wrapper {
   width: 20%;
   min-width: 250px;
+  display: block;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.f-wrapper > a {
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.f-wrapper>a {
+.f-wrapper > a:hover{
+  text-decoration: none;
+}
+
+.f-wrapper > a:active{
+  text-decoration: none;
+}
+
+.f-wrapper > a:visited{
+  text-decoration: none;
+}
+
+.f-wrapper > a{
+  text-decoration: none;
+}
+
+
+.f-wrapper > a > p {
   font-size: 1rem;
   z-index: 2;
   font-weight: 600;
@@ -484,7 +509,7 @@ footer {
   justify-content: space-around;
 }
 
-.f-wrapper>i {
+.f-wrapper > a> i {
   z-index: 2;
   display: flex;
   min-width: 48px;
@@ -494,13 +519,13 @@ footer {
 
 .mainphoto {
   height: 43vh !important;
-  background-image: url('../img/footer.jpg');
+  background-image: url("../img/footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.mainphoto>.slogan {
+.mainphoto > .slogan {
   margin-top: 12vh;
   height: auto;
   justify-content: flex-end;
@@ -514,7 +539,7 @@ footer {
   justify-content: flex-start;
 }
 
-.case>h2 {
+.case > h2 {
   font-size: 1.5rem;
   color: #3b3b3b;
 }
@@ -532,7 +557,7 @@ footer {
   margin-bottom: 1.5vh;
 }
 
-.case>h3 {
+.case > h3 {
   font-size: 0.8rem;
   color: #585858;
   padding: 1vh 0;
@@ -548,4 +573,5 @@ footer {
 
 /* KONTAKT */
 
-.data {}
+.data {
+}
