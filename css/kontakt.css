@@ -3,18 +3,17 @@ body {
   font-size: 10px;
 }
 
-.mainphotoG {
+.mainphoto {
   height: 43vh;
   width: 100%;
-  overflow: hidden;
   position: relative;
-  margin-bottom: 1vh;
+  overflow: hidden;
 }
 
-.mainphotoG .slogan {
+.mainphoto .slogan {
   margin-top: 12vh;
-  justify-content: space-around;
-  text-transform: uppercase;
+  height: auto;
+  justify-content: flex-end;
   z-index: 2;
 }
 

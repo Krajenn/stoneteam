@@ -32,6 +32,11 @@
   .textcase > h2 > p {
     font-size: 1.5rem;
   }
+
+  /* kontakt */
+  .data > h3 {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 480px) {
@@ -108,6 +113,23 @@
   .caserow2 {
     max-width: 550px;
   }
+
+  /* kontakt */
+  .data {
+    max-width: 300px;
+  }
+
+  .field {
+    max-width: 450px;
+  }
+
+  #check {
+    max-width: 450px;
+  }
+
+  .contact-box > a {
+    max-width: 450px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -143,24 +165,24 @@
   .sectionAbout img {
     min-width: none;
     max-width: none;
-    width: 400px;
+    width: 50%;
+    max-width: 410px;
     height: auto;
   }
 
   .sectionAbout .text-panel {
-    width: 40%;
+    width: 50%;
   }
 
   .sectionAbout .text-panel > h3 {
     max-width: max-content;
     width: 90%;
-    font-size: 1.1rem;
-    padding: 0.5rem 0rem 0.5rem 0rem;
+    padding: 0.5rem;
   }
 
   .sectionAbout .text-panel > h2 {
+    margin-top: 0;
     font-size: 1.3rem;
-    padding: 0.75rem 0rem 0rem 0rem;
   }
 
   .link-button a {
@@ -218,7 +240,7 @@
   .caserow1 {
     width: 55%;
   }
-  
+
   .caserow2 {
     width: 45%;
     min-height: 390px;
@@ -235,6 +257,34 @@
     display: flex;
     width: 100%;
     padding: 0rem 0.5rem;
+  }
+
+  .line {
+    height: 3px;
+  }
+
+  /* KONTAKT */
+  .formsection{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .datacontainer{
+    padding: 1rem;
+  }
+
+  .datacontainer > h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-box > h2{
+    font-size: 1.5rem;
+  }
+
+  .data{
+    padding-bottom: 1.5rem;
+    padding-top: 0;
   }
 }
 
@@ -355,21 +405,19 @@
   }
 
   .sectionAbout .text-panel > h2 {
-    font-size: 1.7rem;
-    /* padding: 1rem; */
-    padding: 2vh 0vh 2vh 0vh;
+    font-size: 1.5rem;
+    padding: 1vh 0vh 1vh 0vh;
   }
 
   .sectionAbout .text-panel > h3 {
     width: 50%;
     min-width: 470px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 1vh 0vh 1vh 0vh;
-    /* padding: 1rem; */
   }
 
   .link-button {
-    padding: vh 0vh 3vh 0vh;
+    padding: 2vh 0vh 2vh 0vh;
   }
 
   .link-button a {
@@ -380,6 +428,8 @@
   .sectionAbout img {
     max-height: 50vh;
     min-height: 350px;
+    max-width: none;
+    max-width: 550px;
     width: 50%;
     height: auto;
   }
@@ -387,7 +437,6 @@
   .sectionAbout .text-panel {
     max-height: 50vh;
     height: 100%;
-    width: 50%;
   }
 
   .swiper-slide img {
@@ -421,6 +470,64 @@
 
   .mainphotoG .slogan h2 {
     font-size: 2rem;
+  }
+
+  /* SUBPAGE O-NAS */
+
+  .textcase {
+    align-items: center;
+  }
+
+  .textcase > h2 > p {
+    font-size: 1.5rem;
+  }
+
+  .caserow1 > .textcase > h3 {
+    font-size: 1.1rem;
+  }
+
+  /* KONTAKT */
+  .formsection{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .data{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .field{
+    height: 40px;
+    font-size: 1rem;
+    max-width: none;
+  }
+
+  textarea{
+    height: 120px !important;
+  }
+
+  #check
+  {
+    max-width: none;
+  }
+  #check > a{
+    font-size: 0.9rem;
+  }
+
+  .contact-box > a {
+    max-width: none;
+    font-size: 0.9rem;
+  }
+
+  #btn> button {
+    padding: 2vh 0vh 2vh 0vh;
+  }
+
+  #btn> button > a {
+    font-size: 1.1rem;
+    padding: 0.7em 1.2rem 0.7rem 1.2rem;
   }
 }
 
