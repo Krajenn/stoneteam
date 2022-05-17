@@ -278,6 +278,52 @@ main > section {
   cursor: pointer;
 }
 
+/* OFERTA*/
+.sectionOffer{
+  background-color: white;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.offercontainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.offerbox{
+  display: flex;
+  flex-direction: column;
+}
+
+.offerbox img{
+  width: 100%;
+  max-width: 420px;
+  padding: 0.75rem 0rem 0.75rem 0rem;
+}
+
+.offerbox h3{
+  display: flex;
+  justify-content: center;
+  color: #3b3b3b;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.offerbox p{
+    display: flex;
+    color: #585858;
+    max-width: 400px;
+    font-size: 1rem;
+    font-weight: 420;
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+
 /* CZYM SIE ZAJMUJEMY*/
 
 .sectionAbout {
