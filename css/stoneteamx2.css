@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'stoneteamx2';
-  src: url('../font/stoneteamx2.eot?97291454');
-  src: url('../font/stoneteamx2.eot?97291454#iefix') format('embedded-opentype'),
-       url('../font/stoneteamx2.woff2?97291454') format('woff2'),
-       url('../font/stoneteamx2.woff?97291454') format('woff'),
-       url('../font/stoneteamx2.ttf?97291454') format('truetype'),
-       url('../font/stoneteamx2.svg?97291454#stoneteamx2') format('svg');
+  src: url('../font/stoneteamx2.eot?69991999');
+  src: url('../font/stoneteamx2.eot?69991999#iefix') format('embedded-opentype'),
+       url('../font/stoneteamx2.woff2?69991999') format('woff2'),
+       url('../font/stoneteamx2.woff?69991999') format('woff'),
+       url('../font/stoneteamx2.ttf?69991999') format('truetype'),
+       url('../font/stoneteamx2.svg?69991999#stoneteamx2') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'stoneteamx2';
-    src: url('../font/stoneteamx2.svg?97291454#stoneteamx2') format('svg');
+    src: url('../font/stoneteamx2.svg?69991999#stoneteamx2') format('svg');
   }
 }
 */
