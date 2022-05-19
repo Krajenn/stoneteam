@@ -21,7 +21,7 @@ body {
     height: 20vh;
 }
 
-.mainphotoG h2 {
+.slogan h2 {
     font-size: .9rem;
 }
 
@@ -41,12 +41,49 @@ body {
 }
 
 .mainphotoG .galleryMenu a {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    height: 100%;
+    line-height: 100%;
     color: #fff;
     text-decoration: none;
 }
 
-.mainphotoG .galleryMenu a h2 {
+/* UNDERLINE */
+
+.mainphotoG .galleryMenu a::before {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-105%);
+    transition: 0.2s ease-in-out;
+}
+
+.mainphotoG .galleryMenu a:hover::before {
+    transform: translateX(0);
+}
+
+.mainphotoG .galleryMenu a.active::before {
+    transform: translateX(0);
+}
+
+.mainphotoG .galleryMenu a.active h2 {
     font-weight: 400;
+}
+
+.mainphotoG .galleryMenu a h2 {
+    font-weight: 300;
+    font-size: .9rem;
 }
 
 .mainphotoG .imgbg {
@@ -126,3 +163,5 @@ body {
 .my-gallery figure a img:hover .zoom {
     display: block;
 }
+
+@media (min-width: 380px) {}
