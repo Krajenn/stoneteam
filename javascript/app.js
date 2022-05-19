@@ -10,7 +10,7 @@ $('.scrollDown').on('click', function () {
     }
 
     $('body, html').animate({
-        scrollTop: $('.sectionAbout').offset().top - headerHeight
+        scrollTop: $('.sectionOffer').offset().top - headerHeight
     }, 500)
 })
 
