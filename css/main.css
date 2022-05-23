@@ -309,7 +309,9 @@ main > section {
 .offerbox img {
   width: 100%;
   max-width: 420px;
+  max-height: 350px;
   padding: 0.75rem 0rem 0.75rem 0rem;
+  object-fit: scale-down;
 }
 
 .offerbox h3 {
