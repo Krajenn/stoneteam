@@ -95,3 +95,9 @@ body {
   object-position: center;
   z-index: 1;
 }
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

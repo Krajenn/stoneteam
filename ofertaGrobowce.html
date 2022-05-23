@@ -10,18 +10,18 @@
     <meta name="keywords" content="nagrobki" />
     <!-- google trands i podjebac od konkurencji ktora dobrze sie pozycjonuje-->
     <meta name="author" content="Jakub Bartkowski, Konrad Rejentowicz" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/stoneteamx2.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
-    <link rel="stylesheet" href="photoswipe/dist/default-skin/default-skin.css">
+    <link rel="stylesheet" href="photoswipe/dist/photoswipe.css" />
+    <link rel="stylesheet" href="photoswipe/dist/default-skin/default-skin.css" />
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/galeria.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/oferta.css" />
+    <link rel="stylesheet" href="css/media.css" />
 </head>
 
 <body>
@@ -43,7 +43,9 @@
                     <li><a href="ofertaNagrobki.html">Oferta</a></li>
                     <li><a href="galeriaNagrobki.html">Galeria</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
-                    <li><a href="#"><i class="icon-facebook" href="#"></i></a></li>
+                    <li>
+                        <a href="#"><i class="icon-facebook" href="#"></i></a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -51,28 +53,40 @@
 
     <main>
         <section class="mainphotoG">
-            <img class="imgbg" src="img/footer.jpg" alt="bg">
+            <img class="imgbg" src="img/footer.jpg" alt="bg" />
             <div class="slogan">
-                <h1>galeria</h1>
-                <h2>naszych realizacji</h2>
+                <h1>oferta</h1>
             </div>
             <div class="menu">
-                <a href="galeriaNagrobki.html">
+                <a href="ofertaNagrobki.html">
                     <h2>nagrobki</h2>
                 </a>
-                <a href="galeriaGrobowce.html" class="active">
+                <a href="ofertaGrobowce.html">
                     <h2 class="active">grobowce</h2>
                 </a>
-                <a href="galeriaDodatkowe.html">
+                <a href="ofertaDodatkowe.html">
                     <h2>dodatkowe usługi</h2>
                 </a>
             </div>
         </section>
-        <section class="gallery">
-            <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-
-
-
+        <section class="sectionOffer">
+            <div class="offercontainer">
+                <div class="offerbox">
+                    <h3>Grobowce</h3>
+                    <p>Grobowce wykonujemy z wielką starannością i dbałością o detale, wszelkie pomiary wykonywane są co
+                        do
+                        milimetra.</p>
+                    <img src="img/offer/2.jpg" alt="Image description" />
+                    <section class="buttons">
+                        <div class="link-button">
+                            <a href="kontakt.html">Kontakt</a>
+                        </div>
+                        <div class="link-button">
+                            <a href="galeriaGrobowce.html">Galeria</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
             </div>
         </section>
     </main>
@@ -110,42 +124,31 @@
         </div>
     </footer>
 
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <!-- https://photoswipe.com/documentation/getting-started.html -->
+    <!-- add PhotoSwipe (.pswp) element to DOM - 
+    Root element of PhotoSwipe. Must have class pswp. -->
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
         <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
+          It's a separate element, as animating opacity is faster than rgba(). -->
         <div class="pswp__bg"></div>
-
         <!-- Slides wrapper with overflow:hidden. -->
         <div class="pswp__scroll-wrap">
-
-            <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
+            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
             <div class="pswp__container">
                 <div class="pswp__item"></div>
                 <div class="pswp__item"></div>
                 <div class="pswp__item"></div>
             </div>
-
             <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
             <div class="pswp__ui pswp__ui--hidden">
-
                 <div class="pswp__top-bar">
-
                     <!--  Controls are self-explanatory. Order can be changed. -->
-
                     <div class="pswp__counter"></div>
-
                     <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
                     <button class="pswp__button pswp__button--share" title="Share"></button>
-
                     <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
                     <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
                     <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
                     <!-- element will get class pswp__preloader--active when preloader is running -->
                     <div class="pswp__preloader">
@@ -156,25 +159,16 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
                     <div class="pswp__share-tooltip"></div>
                 </div>
-
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                </button>
-
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                </button>
-
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
                 <div class="pswp__caption">
                     <div class="pswp__caption__center"></div>
                 </div>
-
             </div>
-
         </div>
-
     </div>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
@@ -182,7 +176,6 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="photoswipe/dist/photoswipe.min.js"></script>
     <script src="photoswipe/dist/photoswipe-ui-default.min.js"></script>
-    <script src="javascript/photoswipe.js"></script>
     <script src="javascript/app.js"></script>
 </body>
 
