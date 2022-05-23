@@ -25,7 +25,7 @@ body {
     font-size: .9rem;
 }
 
-.mainphotoG .galleryMenu {
+.mainphotoG .menu {
     width: 100%;
     height: 8vh;
     margin-top: 2vh;
@@ -40,7 +40,7 @@ body {
     padding: 0 4%;
 }
 
-.mainphotoG .galleryMenu a {
+.mainphotoG .menu a {
     position: relative;
 
     flex-basis: 33%;
@@ -51,7 +51,7 @@ body {
     text-decoration: none;
 }
 
-.mainphotoG .galleryMenu a h2 {
+.mainphotoG .menu a h2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,7 +65,7 @@ body {
 
 /* UNDERLINE */
 
-.mainphotoG .galleryMenu h2::before {
+.mainphotoG .menu h2::before {
     display: block;
     content: "";
     height: 3px;
@@ -78,15 +78,15 @@ body {
     transition: 0.2s ease-in-out;
 }
 
-.mainphotoG .galleryMenu h2:hover::before {
+.mainphotoG .menu h2:hover::before {
     transform: translateX(5%);
 }
 
-.mainphotoG .galleryMenu h2.active::before {
+.mainphotoG .menu h2.active::before {
     transform: translateX(5%);
 }
 
-.mainphotoG .galleryMenu h2.active {
+.mainphotoG .menu h2.active {
     font-weight: 400;
 }
 

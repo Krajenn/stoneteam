@@ -139,7 +139,7 @@
   }
 
   /* SUBPAGE GALLERY */
-  .mainphotoG .galleryMenu a h2 {
+  .mainphotoG .menu a h2 {
     font-size: 1.1rem;
   }
 }
@@ -245,7 +245,7 @@
     font-size: 1.8rem;
   }
 
-  .mainphotoG .galleryMenu a h2 {
+  .mainphotoG .menu a h2 {
     font-size: 1.4rem;
   }
 
@@ -488,11 +488,11 @@
     width: 31%;
   }
 
-  .mainphotoG .galleryMenu a h2 {
+  .mainphotoG .menu a h2 {
     font-size: 1.5rem;
   }
 
-  .mainphotoG .galleryMenu h2::before {
+  .mainphotoG .menu h2::before {
     height: 6px;
   }
 
