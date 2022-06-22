@@ -25,7 +25,7 @@ body {
     font-size: .9rem;
 }
 
-.mainphotoG .galleryMenu {
+.mainphotoG .menu {
     width: 100%;
     height: 8vh;
     margin-top: 2vh;
@@ -40,28 +40,37 @@ body {
     padding: 0 4%;
 }
 
-.mainphotoG .galleryMenu a {
+.mainphotoG .menu a {
     position: relative;
 
-    display: flex;
-    align-items: center;
-
+    flex-basis: 33%;
     overflow: hidden;
-
     height: 100%;
     line-height: 100%;
     color: #fff;
     text-decoration: none;
 }
 
+.mainphotoG .menu a h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    font-weight: 300;
+    font-size: .8rem;
+    line-height: 120%;
+}
+
 /* UNDERLINE */
 
-.mainphotoG .galleryMenu a::before {
+.mainphotoG .menu h2::before {
     display: block;
     content: "";
     height: 3px;
-    width: 100%;
-    background-color: yellow;
+    width: 90%;
+    background-color: #c5c4c4;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -69,21 +78,16 @@ body {
     transition: 0.2s ease-in-out;
 }
 
-.mainphotoG .galleryMenu a:hover::before {
-    transform: translateX(0);
+.mainphotoG .menu h2:hover::before {
+    transform: translateX(5%);
 }
 
-.mainphotoG .galleryMenu a.active::before {
-    transform: translateX(0);
+.mainphotoG .menu h2.active::before {
+    transform: translateX(5%);
 }
 
-.mainphotoG .galleryMenu a.active h2 {
+.mainphotoG .menu h2.active {
     font-weight: 400;
-}
-
-.mainphotoG .galleryMenu a h2 {
-    font-weight: 300;
-    font-size: .9rem;
 }
 
 .mainphotoG .imgbg {
@@ -119,13 +123,6 @@ body {
     background-color: black;
 }
 
-/* .my-gallery figure::before{
-    content: '';
-    display: flex;
-    width: 100%;
-    height: 100%;
-} */
-
 .my-gallery figure a img {
     height: 100%;
     width: 100%;
@@ -133,35 +130,7 @@ body {
     transition: .2s;
 }
 
-.my-gallery figure:hover img {
-    opacity: .5;
-    transform: scale(1.1);
-}
-
-.my-gallery figure:hover .zoomIcon {
-    opacity: 1;
-}
-
 .pswp img {
     max-width: none;
     object-fit: contain;
 }
-
-.zoomIcon {
-    opacity: 0;
-    color: white;
-    font-size: 2rem;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: .2s;
-}
-
-.my-gallery figure a img:hover .zoom {
-    display: block;
-}
-
-@media (min-width: 380px) {}
