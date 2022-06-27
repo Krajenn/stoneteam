@@ -230,7 +230,7 @@ main > section {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image: url("../img/slide.jpg");
+  background-image: url("../img/slide.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -304,14 +304,14 @@ main > section {
 .offerbox {
   display: flex;
   flex-direction: column;
+  align-items: center; 
 }
 
 .offerbox img {
   width: 100%;
-  max-width: 420px;
-  max-height: 350px;
   padding: 0.75rem 0rem 0.75rem 0rem;
   object-fit: scale-down;
+  max-width: 450px;
 }
 
 .offerbox h3 {
@@ -326,22 +326,21 @@ main > section {
 .offerbox p {
   display: flex;
   color: #585858;
-  max-width: 400px;
   font-size: 1rem;
   font-weight: 420;
   text-align: justify;
-  padding: 0.5rem;
+  padding: 0.5rem 0rem;
+  max-width: 450px;
 }
 
 /* CZYM SIE ZAJMUJEMY*/
 
 .sectionAbout {
   background-color: white;
-  padding-bottom: 3vh; 
+  padding: 3vh 1rem;
 }
 
 .sectionAbout .about {
-  padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -350,7 +349,7 @@ main > section {
 
 .sectionAbout img {
   width: 100%;
-  max-width: 420px;
+  max-width: 450px;
   padding: 0.75rem 0rem 0.75rem 0rem;
   display: flex;
 }
@@ -420,7 +419,6 @@ main > section {
   height: 53vh;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 3vh;
   background-color: #fff;
 }
 

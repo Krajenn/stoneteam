@@ -21,13 +21,14 @@
     font-weight: 800;
   }
 
-  /* CZYM SIE ZAJMUJEMY*/
-  .sectionAbout .text-panel>h2 {
+  /*OFFER*/
+  .offerbox h3{
     font-size: 1.5rem;
   }
 
-  .sectionAbout .about {
-    padding: 0rem 0.5rem;
+  /* CZYM SIE ZAJMUJEMY*/
+  .sectionAbout .text-panel>h2 {
+    font-size: 1.5rem;
   }
 
   footer {
@@ -65,19 +66,16 @@
 
   /* CZYM SIE ZAJMUJEMY*/
   .sectionAbout .text-panel>h3 {
-    max-width: 500px;
+    max-width: 450px;
   }
 
   .sectionAbout .text-panel>h2 {
     margin-top: 1rem;
   }
 
-  .sectionAbout .about {
-    padding: 0rem 1rem;
-  }
 
   .sectionAbout img {
-    max-width: 500px;
+    max-width: 450px;
     padding: 0px;
   }
 
@@ -162,7 +160,20 @@
     line-height: 2.6rem;
     padding: 16px 24px;
   }
+  /* Offer */
+  .offercontainer{
+    flex-direction: row;
+  }
 
+  .offerbox{
+    padding: 0rem 0.5rem;
+  }
+
+  .offerbox > .link-button{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+  }
   /* CZYM SIE ZAJMUJEMY*/
 
   .sectionAbout {
@@ -173,13 +184,14 @@
   .sectionAbout .about {
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
   .sectionAbout img {
     min-width: none;
     max-width: none;
     width: 50%;
-    max-width: 410px;
+    min-height: 275px;
     height: auto;
   }
 
@@ -189,8 +201,8 @@
 
   .sectionAbout .text-panel>h3 {
     max-width: max-content;
+    padding: 0rem 0.5rem;
     width: 90%;
-    padding: 0.5rem;
   }
 
   .sectionAbout .text-panel>h2 {
