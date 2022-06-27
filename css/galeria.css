@@ -123,8 +123,9 @@ body {
     flex-wrap: wrap;
 }
 
-.my-gallery figure {
+.my-gallery div {
     width: 46%;
+    height: auto;
     overflow: hidden;
     margin-top: 2vh;
     display: block;
@@ -132,7 +133,7 @@ body {
     background-color: black;
 }
 
-.my-gallery figure a img {
+.my-gallery div a img {
     height: 100%;
     width: 100%;
     object-fit: cover;
