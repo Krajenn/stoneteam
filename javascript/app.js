@@ -46,6 +46,5 @@ hamburger.addEventListener('click', handleClick);
 let width = window.innerWidth;
 let footImg = document.querySelector('.imgbg')
 if (width < 1024) {
-    console.log('masno')
     footImg.setAttribute('src', 'img/footer-min.jpg')
 }
