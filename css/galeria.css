@@ -140,7 +140,11 @@ body {
     transition: .2s;
 }
 
-.pswp img {
+.lazy{
+    min-height: 150px;
+}
+
+/* .pswp img {
     max-width: none;
     object-fit: contain;
-}
+} */

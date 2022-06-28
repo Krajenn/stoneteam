@@ -1,6 +1,6 @@
-galery = document.querySelector('.my-gallery')
+galery = document.querySelector('.my-gallery');
 
-for (let i = 1; i <= 128; i++) {
+for (let i = 1; i <= 127; i++) {
     div = document.createElement('DIV')
     a = document.createElement('a')
     img = document.createElement('IMG')
@@ -12,9 +12,9 @@ for (let i = 1; i <= 128; i++) {
     a.setAttribute('data-lightbox', 'nagrobki')
     div.appendChild(a)
 
-    img.src = '../img/gallery/nagrobki/nagrobek' + i + '.jpg'
+    img.setAttribute('data-src', '../img/gallery/nagrobki/nagrobek' + i + '.jpg')
     img.setAttribute('alt', img.src)
-    img.setAttribute('loading', 'lazy')
+    img.setAttribute('class', 'lazy')
 
     span.setAttribute('class', 'zoomIcon')
     icon.setAttribute('class', 'icon-search')
@@ -22,4 +22,22 @@ for (let i = 1; i <= 128; i++) {
 
     a.appendChild(img)
     a.appendChild(span)
-}
+};
+
+const images = document.querySelectorAll('.lazy');
+
+let imageOptions = {};
+
+let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            const img = entry.target;
+            img.setAttribute('src', img.getAttribute('data-src'))
+            observer.unobserve(entry.target);
+        }
+    })
+}, imageOptions);
+
+images.forEach(image => {
+    observer.observe(image)
+})
