@@ -40,3 +40,11 @@ const handleClick = () => {
 }
 
 hamburger.addEventListener('click', handleClick);
+
+// Footer img
+
+let width = window.innerWidth;
+let footImg = document.querySelector('.imgbg')
+if (width < 1024) {
+    footImg.setAttribute('src', 'img/footer-min.jpg')
+}

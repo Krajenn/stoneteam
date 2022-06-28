@@ -496,7 +496,7 @@
     padding: 0 2%;
   }
 
-  .my-gallery figure {
+  .my-gallery div {
     width: 31%;
   }
 
@@ -508,12 +508,12 @@
     height: 6px;
   }
 
-  .my-gallery figure:hover img {
+  .my-gallery div:hover img {
     opacity: .5;
     transform: scale(1.1);
   }
 
-  .my-gallery figure:hover .zoomIcon {
+  .my-gallery div:hover .zoomIcon {
     opacity: 1;
   }
 
@@ -592,7 +592,7 @@
 @media (min-width: 1200px) {
 
   /* SUBPAGE GALLERY */
-  .my-gallery figure {
+  .my-gallery div {
     width: 18%;
   }
 }
