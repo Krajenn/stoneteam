@@ -22,7 +22,7 @@
   }
 
   /*OFFER*/
-  .offerbox h3{
+  .offerbox h3 {
     font-size: 1.5rem;
   }
 
@@ -160,20 +160,22 @@
     line-height: 2.6rem;
     padding: 16px 24px;
   }
+
   /* Offer */
-  .offercontainer{
+  .offercontainer {
     flex-direction: row;
   }
 
-  .offerbox{
+  .offerbox {
     padding: 0rem 0.5rem;
   }
 
-  .offerbox > .link-button{
+  .offerbox>.link-button {
     display: flex;
     height: 100%;
     align-items: flex-end;
   }
+
   /* CZYM SIE ZAJMUJEMY*/
 
   .sectionAbout {
@@ -254,6 +256,10 @@
 
   /* SUBPAGE GALLERY */
   .mainphotoG .slogan h2 {
+    font-size: 1.8rem;
+  }
+
+  .mainphoto .slogan h2 {
     font-size: 1.8rem;
   }
 
@@ -428,6 +434,10 @@
   }
 
   .mainphotoG .slogan h2 {
+    font-size: 2.2rem;
+  }
+
+  .mainphoto .slogan h2 {
     font-size: 2.2rem;
   }
 

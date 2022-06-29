@@ -157,59 +157,58 @@ header.sticky .topnav {
   line-height: 10vh;
 }
 
-.topnav ul > li {
+.topnav ul>li {
   list-style: none;
   width: 100%;
   text-align: center;
 }
 
-.topnav ul > li > a {
+.topnav ul>li>a {
   position: relative;
   display: block;
   font-size: 0.8rem;
   overflow: hidden;
 }
 
-.topnav ul > li > a:link {
+.topnav ul>li>a:link {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
 
-.topnav ul > li > a:visited {
+.topnav ul>li>a:visited {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
 
-.topnav ul > li > a:hover {
+.topnav ul>li>a:hover {
   color: #585858;
 }
 
-.topnav ul > li > a:active {
-}
+.topnav ul>li>a:active {}
 
 /* fb */
 
-.topnav ul > li > i:link {
+.topnav ul>li>i:link {
   text-decoration: none;
 }
 
-.topnav ul > li > i:visited {
+.topnav ul>li>i:visited {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
 
-.topnav ul > li > i:hover {
+.topnav ul>li>i:hover {
   color: #585858;
   cursor: pointer;
 }
 
-.topnav ul > li > i:active {
+.topnav ul>li>i:active {
   text-decoration: underline;
 }
 
 /* MAIN */
 
-main > section {
+main>section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,6 +234,7 @@ main > section {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
+  filter: blur(2px) saturate(75%);
 }
 
 .bgFixed.active {
@@ -304,7 +304,7 @@ main > section {
 .offerbox {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
 .offerbox img {
@@ -361,7 +361,7 @@ main > section {
   align-items: center;
 }
 
-.sectionAbout .text-panel > h2 {
+.sectionAbout .text-panel>h2 {
   display: flex;
   color: #3b3b3b;
   font-size: 1.2rem;
@@ -369,7 +369,7 @@ main > section {
   padding: 0.5rem;
 }
 
-.sectionAbout .text-panel > h3 {
+.sectionAbout .text-panel>h3 {
   display: flex;
   color: #585858;
   max-width: 400px;
@@ -398,19 +398,19 @@ main > section {
   text-align: center;
 }
 
-.link-button > a:hover {
+.link-button>a:hover {
   text-decoration: none;
   background-color: #707070;
   transform: scale(0.95);
   transition: ease-in-out;
 }
 
-.link-button > a:active {
+.link-button>a:active {
   text-decoration: none;
   background-color: #707070;
 }
 
-.sectionAbout > .about > .text-panel > .link-button > a:visited {
+.sectionAbout>.about>.text-panel>.link-button>a:visited {
   text-decoration: none;
 }
 
@@ -454,7 +454,7 @@ ul.swiper-wrapper {
   align-items: center;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -526,7 +526,7 @@ footer {
   justify-content: flex-start;
 }
 
-.f-wrapper > a {
+.f-wrapper>a {
   width: 20%;
   min-width: 250px;
   z-index: 2;
@@ -535,23 +535,23 @@ footer {
   justify-content: flex-start;
 }
 
-.f-wrapper > a:hover {
+.f-wrapper>a:hover {
   text-decoration: none;
 }
 
-.f-wrapper > a:active {
+.f-wrapper>a:active {
   text-decoration: none;
 }
 
-.f-wrapper > a:visited {
+.f-wrapper>a:visited {
   text-decoration: none;
 }
 
-.f-wrapper > a {
+.f-wrapper>a {
   text-decoration: none;
 }
 
-.f-wrapper > a > p {
+.f-wrapper>a>p {
   font-size: 1rem;
   z-index: 2;
   font-weight: 600;
@@ -561,7 +561,7 @@ footer {
   justify-content: space-around;
 }
 
-.f-wrapper > a > i {
+.f-wrapper>a>i {
   z-index: 2;
   display: flex;
   min-width: 48px;

@@ -52,58 +52,51 @@
     <section class="mainphoto">
       <img class="imgbg" src="img/footer.jpg" alt="bg" />
       <div class="slogan">
-        <h1>Kontakt</h1>
+        <h1>Dziękujemy za wiadomość!</h1>
+        <h2>
+          <a href="index.html">Wróć na stoneteam.pl</a>
+        </h2>
       </div>
     </section>
-    <section class="formsection">
-      <div class="datacontainer">
-        <h2>Dane Firmy<div class="line"></div>
-        </h2>
-
-        <div class="data">
-          <i class="icon-mail-alt"></i>
-          <h3> ul. Łostowicka 35 80-801 Gdańsk </h3>
-        </div>
-        <div class="data">
-          <i class="icon-phone"></i>
-          <h3>
-            516
-            774
-            555
-          </h3>
-        </div>
-        <div class="data">
-          <i class="icon-location"></i>
-          <h3>
-            stoneteam@gmail.com
-          </h3>
-        </div>
-        <!-- NIP? -->
-      </div>
-      <form class="contact-box" id="contactform" action="https://formsubmit.io/send/mail" method="POST">
-        <h2>Formularz Kontaktowy<div class="line"></div>
-        </h2>
-        <input name="1: imię" id="imie" type="text" class="field" placeholder="Imię i Nazwisko">
-        <input name="2: email" id="email" type="email" class="field" placeholder="E-mail*" required>
-        <input name="3: temat" id="temat" type="text" class="field" placeholder="Temat">
-        <textarea name="4: treść" id="tresc" placeholder="Treść*" class="field" required></textarea>
-        <label id="check"><input type="checkbox" required><a>* Wyrażam zgodę na przetwarzanie moich danych kontaktowych
-            i treści uzupełnionej w formularzu w celu nawiązania kontaktu i odpowiedzi na moją wiadomość.</a>
-        </label>
-        <a>*Wypełnienie pól oznaczonych gwiazdką jest wymagane.</a>
-
-        <input name="_redirect" type="hidden" id="name" value="http://stoneteam.pl/kontaktRedirect.html">
-        <input name="_formsubmit_id" type="text" style="display:none">
-
-        <div id="btn"><button type="submit"><a>Wyślij</a></button></div>
-      </form>
-    </section>
-    <section class="sectionMap">
+    <section class="sectionMapRedirect">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.9506277337423!2d18.598799852116525!3d54.34018078010215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd7473e3dc310b%3A0x52b6e5e99d183ace!2sCmentarz%20%C5%81ostowicki!5e0!3m2!1spl!2spl!4v1647434511895!5m2!1spl!2spl"
         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
   </main>
+  <footer>
+    <img class="imgbg" src="img/footer.jpg" alt="bg" />
+    <div class="footer-container">
+      <div class="f-rec">
+        <div class="f-wrapper">
+          <a href="tel:+48516774555">
+            <i class="icon-phone"></i>
+            <p>516 774 555</p>
+          </a>
+        </div>
+      </div>
+      <div class="f-rec">
+        <div class="f-wrapper">
+          <a href="mailto:stoneteam@gmail.com">
+            <i class="icon-mail-alt"></i>
+            <p>stoneteam@gmail.com</p>
+          </a>
+        </div>
+      </div>
+      <div class="f-rec">
+        <div class="f-wrapper">
+          <a href="https://goo.gl/maps/DRJQryizR7dK6QTw6" target="_blank">
+            <i class="icon-location"></i>
+            <p>
+              ul. Łostowicka 35
+              <br />
+              80-801 Gdańsk
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
