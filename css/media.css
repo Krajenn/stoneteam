@@ -1,7 +1,6 @@
 @media (min-width: 380px) {
-
   /* NAV */
-  .topnav ul>li>a {
+  .topnav ul > li > a {
     font-size: 1rem;
   }
 
@@ -23,11 +22,11 @@
 
   /*OFFER*/
   .offerbox h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   /* CZYM SIE ZAJMUJEMY*/
-  .sectionAbout .text-panel>h2 {
+  .sectionAbout .text-panel > h2 {
     font-size: 1.5rem;
   }
 
@@ -36,20 +35,19 @@
   }
 
   /* SUBPAGE ONAS */
-  .textcase>h2>p {
+  .textcase > h2 > p {
     font-size: 1.5rem;
   }
 
   /* kontakt */
-  .data>h3 {
+  .data > h3 {
     font-size: 1rem;
   }
 }
 
 @media (min-width: 480px) {
-
   /* NAV */
-  .topnav ul>li>a {
+  .topnav ul > li > a {
     font-size: 1.2rem;
   }
 
@@ -65,14 +63,13 @@
   }
 
   /* CZYM SIE ZAJMUJEMY*/
-  .sectionAbout .text-panel>h3 {
+  .sectionAbout .text-panel > h3 {
     max-width: 450px;
   }
 
-  .sectionAbout .text-panel>h2 {
+  .sectionAbout .text-panel > h2 {
     margin-top: 1rem;
   }
-
 
   .sectionAbout img {
     max-width: 450px;
@@ -84,11 +81,11 @@
     height: 25vh;
   }
 
-  .f-wrapper>a>p {
+  .f-wrapper > a > p {
     font-size: 1.2rem;
   }
 
-  .f-wrapper>a {
+  .f-wrapper > a {
     width: 20%;
     min-width: 300px;
   }
@@ -106,12 +103,12 @@
     align-items: center;
   }
 
-  .caserow1>img {
+  .caserow1 > img {
     width: 100%;
     max-width: 550px;
   }
 
-  .caserow1>.textcase>h3 {
+  .caserow1 > .textcase > h3 {
     max-width: 550px;
   }
 
@@ -132,7 +129,7 @@
     max-width: 450px;
   }
 
-  .contact-box>a {
+  .contact-box > a {
     max-width: 450px;
   }
 
@@ -143,9 +140,8 @@
 }
 
 @media (min-width: 768px) {
-
   /* NAV */
-  .topnav ul>li>a {
+  .topnav ul > li > a {
     font-size: 1.4rem;
   }
 
@@ -162,6 +158,11 @@
   }
 
   /* Offer */
+
+  .sectionOffer h2 {
+    font-size: 1.5rem;
+  }
+
   .offercontainer {
     flex-direction: row;
   }
@@ -170,12 +171,45 @@
     padding: 0rem 0.5rem;
   }
 
-  .offerbox>.link-button {
+  .offerbox > .link-button {
     display: flex;
     height: 100%;
     align-items: flex-end;
   }
 
+  /* secoff */
+
+  .offerbox-secof .offerbox {
+    flex-direction: row;
+  }
+
+  .offerbox-secof .offerbox > img {
+    padding: 0rem 1rem;
+    max-width: none;
+    max-height: 700px;
+    width: 50%;
+  }
+
+  .offerpackage {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 0rem 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offerpackage > p {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+
+  .offerpackage > h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0rem;
+  }
   /* CZYM SIE ZAJMUJEMY*/
 
   .sectionAbout {
@@ -201,13 +235,13 @@
     width: 50%;
   }
 
-  .sectionAbout .text-panel>h3 {
+  .sectionAbout .text-panel > h3 {
     max-width: max-content;
     padding: 0rem 0.5rem;
     width: 90%;
   }
 
-  .sectionAbout .text-panel>h2 {
+  .sectionAbout .text-panel > h2 {
     margin-top: 0;
     font-size: 1.3rem;
   }
@@ -241,12 +275,12 @@
     align-items: flex-start;
   }
 
-  .f-wrapper>a {
+  .f-wrapper > a {
     min-width: 230px;
     flex-direction: column;
   }
 
-  .f-wrapper>a>p {
+  .f-wrapper > a > p {
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -284,11 +318,11 @@
     justify-content: space-between;
   }
 
-  .caserow1>img {
+  .caserow1 > img {
     display: none;
   }
 
-  .caserow2>img {
+  .caserow2 > img {
     display: flex;
     width: 100%;
     padding: 0rem 0.5rem;
@@ -308,12 +342,12 @@
     padding: 1rem;
   }
 
-  .datacontainer>h2 {
+  .datacontainer > h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
 
-  .contact-box>h2 {
+  .contact-box > h2 {
     font-size: 1.5rem;
   }
 
@@ -347,7 +381,8 @@
     max-height: 80%;
   }
 
-  .logo__link {}
+  .logo__link {
+  }
 
   .topnav {
     width: 70%;
@@ -373,7 +408,7 @@
     line-height: auto;
   }
 
-  .topnav ul>li {
+  .topnav ul > li {
     line-height: normal;
     width: auto;
     height: 100%;
@@ -392,7 +427,7 @@
     padding: 10px 15px;
   }
 
-  .topnav ul>li>i {
+  .topnav ul > li > i {
     display: flex;
     justify-content: center;
     padding: 0;
@@ -436,6 +471,23 @@
   .mainphotoG .slogan h2 {
     font-size: 2.2rem;
   }
+  /* offer */
+  .offercontainer {
+    max-width: 1400px;
+  }
+
+  .offerbox {
+    padding: 0rem 0.75rem;
+  }
+
+  .offerbox > h3 {
+    font-size: 1.5rem;
+    padding: 1vh 0vh 1vh 0vh;
+  }
+
+  .offerbox > p {
+    font-size: 1.1rem;
+  }
 
   .mainphoto .slogan h2 {
     font-size: 2.2rem;
@@ -446,12 +498,12 @@
     max-width: 1400px;
   }
 
-  .sectionAbout .text-panel>h2 {
+  .sectionAbout .text-panel > h2 {
     font-size: 1.5rem;
     padding: 1vh 0vh 1vh 0vh;
   }
 
-  .sectionAbout .text-panel>h3 {
+  .sectionAbout .text-panel > h3 {
     width: 50%;
     min-width: 470px;
     font-size: 1.1rem;
@@ -496,7 +548,7 @@
     height: 116px;
   }
 
-  .f-wrapper>a>p {
+  .f-wrapper > a > p {
     height: 58px;
     font-size: 1.3rem;
   }
@@ -519,7 +571,7 @@
   }
 
   .my-gallery div:hover img {
-    opacity: .5;
+    opacity: 0.5;
     transform: scale(1.1);
   }
 
@@ -537,7 +589,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    transition: .2s;
+    transition: 0.2s;
   }
 
   /* SUBPAGE O-NAS */
@@ -546,11 +598,11 @@
     align-items: center;
   }
 
-  .textcase>h2>p {
+  .textcase > h2 > p {
     font-size: 1.5rem;
   }
 
-  .caserow1>.textcase>h3 {
+  .caserow1 > .textcase > h3 {
     font-size: 1.1rem;
   }
 
@@ -580,27 +632,26 @@
     max-width: none;
   }
 
-  #check>a {
+  #check > a {
     font-size: 0.9rem;
   }
 
-  .contact-box>a {
+  .contact-box > a {
     max-width: none;
     font-size: 0.9rem;
   }
 
-  #btn>button {
+  #btn > button {
     padding: 2vh 0vh 2vh 0vh;
   }
 
-  #btn>button>a {
+  #btn > button > a {
     font-size: 1.1rem;
     padding: 0.7em 1.2rem 0.7rem 1.2rem;
   }
 }
 
 @media (min-width: 1200px) {
-
   /* SUBPAGE GALLERY */
   .my-gallery div {
     width: 18%;
@@ -610,7 +661,6 @@
 /* LANDSCAPE */
 
 @media (min-width: 1024px) and (max-height: 1000px) {
-
   /* HEADER */
   header {
     padding: 0;
