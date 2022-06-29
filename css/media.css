@@ -430,6 +430,24 @@
   .mainphotoG .slogan h2 {
     font-size: 2.2rem;
   }
+  /* offer */
+  .offercontainer{
+    max-width: 1400px;
+  }
+
+  .offerbox{
+    padding: 0rem 0.75rem;
+  }
+
+  .offerbox >h3{
+    font-size: 1.5rem;
+    padding: 1vh 0vh 1vh 0vh;
+  }
+
+  .offerbox >p{
+    font-size: 1.1rem;
+  }
+
 
   /* CZYM SIE ZAJMUJEMY*/
   .sectionAbout .about {
