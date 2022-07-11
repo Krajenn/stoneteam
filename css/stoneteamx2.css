@@ -257,4 +257,7 @@
   .icon-facebook:before {
     font-size: 1.4rem;
   }
+  .icon-down-open-big::before{
+    font-size: 3rem;
+  }
 }
