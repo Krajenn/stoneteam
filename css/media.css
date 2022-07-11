@@ -439,6 +439,10 @@
     padding: 0;
   }
 
+  .bgFixed{
+    filter: blur(5px);
+  }
+
   /* underline */
 
   .topnav ul li a::after {
