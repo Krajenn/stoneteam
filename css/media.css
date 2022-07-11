@@ -34,6 +34,9 @@
     height: 30vh;
   }
 
+  .f-wrapper>a {
+    min-width: 350px;
+  }
   /* SUBPAGE ONAS */
   .textcase > h2 > p {
     font-size: 1.5rem;
