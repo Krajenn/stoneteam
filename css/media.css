@@ -302,6 +302,11 @@
     font-size: 1.4rem;
   }
 
+  button.up{
+    height: 8vh;
+    width: 8vh;
+  }
+
   /* SUBPAGE ONAS */
   .case {
     flex-direction: row;
@@ -699,6 +704,11 @@
   /* GALLERY */
   .sectionGallery {
     height: 70vh;
+  }
+
+  button.up{
+    height: 9vh;
+    width: 9vh;
   }
 
   /* FOOTER */

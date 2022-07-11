@@ -48,3 +48,19 @@ let footImg = document.querySelector('.imgbg')
 if (width < 1024) {
     footImg.setAttribute('src', 'img/footer-min.jpg')
 }
+
+// SCROLL BUTTON
+
+$(window).on('scroll', function () {
+    if ($(window).scrollTop() > $(window).height() / 2) {
+        $('button.up').addClass('active');
+    } else {
+        $('button.up').removeClass('active');
+    }
+})
+
+$('button.up').on('click', function () {
+    $('body, html').animate({
+        scrollTop: "0"
+    })
+})
