@@ -487,11 +487,15 @@
   }
 
   .offerbox > p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .mainphoto .slogan h2 {
     font-size: 2.2rem;
+  }
+
+  .sectionOffer h2{
+    font-size: 2rem;
   }
 
   /* CZYM SIE ZAJMUJEMY*/
@@ -507,7 +511,7 @@
   .sectionAbout .text-panel > h3 {
     width: 50%;
     min-width: 470px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 1vh 0vh 1vh 0vh;
   }
 
@@ -593,7 +597,7 @@
     transition: 0.2s;
   }
 
-  /* SUBPAGE O-NAS */
+  /* SUBPAGE OFERTA */
 
   .textcase {
     align-items: center;
@@ -605,6 +609,10 @@
 
   .caserow1 > .textcase > h3 {
     font-size: 1.1rem;
+  }
+
+  .offerpackage > p{
+    font-size: 1.2rem;
   }
 
   /* KONTAKT */
