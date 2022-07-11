@@ -160,3 +160,32 @@ body {
 .lazy {
     min-height: 150px;
 }
+
+/* SCROLL BUTTON */
+
+button.up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    bottom: 5vh;
+    right: 5vw;
+    border: 0;
+    cursor: pointer;
+    z-index: 3;
+    transition: .3s linear;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+}
+
+button.up i {
+    transform: rotate(180deg) translateY(5%);
+    color: #fff;
+}
+
+button.up.active {
+    opacity: 1;
+}
