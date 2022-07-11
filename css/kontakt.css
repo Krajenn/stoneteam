@@ -44,6 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 3vh 1rem 3vh 1rem;
+  justify-content: space-around;
 }
 
 .datacontainer>h2 {
@@ -195,11 +196,23 @@ textarea {
     height: 38vh;
     width: 100%;
   }
+
+  .contact-box{
+    width: 60%;
+  }
+
+  .datacontainer{
+    width: 30%;
+  }  
 }
 
 @media (min-width: 1024px) {
   .sectionMapRedirect {
     height: 42vh;
     width: 100%;
+  }
+
+  .contact-box{
+    width: 50%;
   }
 }
